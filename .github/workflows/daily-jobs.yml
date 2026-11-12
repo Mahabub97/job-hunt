@@ -1,0 +1,49 @@
+name: Daily job search
+
+on:
+  schedule:
+    # 01:00 UTC = 07:00 in Dhaka. GitHub may start it a few minutes late.
+    - cron: "0 1 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-jobs
+  cancel-in-progress: false
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Find new jobs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          CANDIDATE_PROFILE: ${{ secrets.CANDIDATE_PROFILE }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python scripts/find_jobs.py
+
+      - name: Save results
+        run: |
+          git config user.name "job-hunt-bot"
+          git config user.email "job-hunt-bot@users.noreply.github.com"
+          git add docs/jobs.json data/seen.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Daily jobs $(date -u +%Y-%m-%d)"
+            git push
+          fi
