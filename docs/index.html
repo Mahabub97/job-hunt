@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#18293B">
+<title>Job hunt desk</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#E9EEF2; --surface:#FFFFFF; --ink:#18293B; --muted:#5B6B7C; --line:#C9D3DC; --soft:#F3F6F8;
+  --sign:#F2B705; --sign-ink:#18293B; --blue:#1F5FA8; --ok:#2E7D4F; --warn:#B4441F; --chip:#DCE4EB;
+  --board:#18293B; --board-ink:#E9EEF2;
+  --c-private:#1F5FA8; --c-bank:#2E7D4F; --c-government:#8A5A00; --c-remote:#6B4FA0; --c-abroad:#0F7C86;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121C27; --surface:#1A2734; --ink:#E6EDF3; --muted:#9AAABA; --line:#2E3E4F; --soft:#15212D;
+    --blue:#7DB3EE; --ok:#6CC892; --warn:#F08A63; --chip:#243444; --board:#0A121A; --board-ink:#E6EDF3;
+    --c-private:#7DB3EE; --c-bank:#6CC892; --c-government:#E3B14B; --c-remote:#B9A2EA; --c-abroad:#5CC6CF;
+    color-scheme:dark;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 "Barlow",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:22px 18px 72px}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",system-ui,sans-serif}
+h1{font-size:clamp(2.1rem,6vw,3.1rem);line-height:1;margin:0 0 6px;font-weight:700}
+h2{font-size:1.5rem;margin:0 0 4px;font-weight:600}
+h3{font-weight:600}
+.sub{color:var(--muted);margin:0}
+.note{font-size:.9rem;color:var(--muted)}
+a{color:var(--blue)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+[hidden]{display:none!important}
+.btn{display:inline-block;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:7px 14px;border-radius:6px;font-weight:600;line-height:1.3}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.small{padding:4px 10px;font-size:.9rem}
+.btn:disabled{opacity:.55;cursor:default}
+.linkbtn{background:none;border:0;padding:4px 2px;color:var(--muted);text-decoration:underline;font-size:.9rem}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+input[type=text],input[type=email],input[type=tel],input[type=url],input[type=password],input[type=date],input[type=search],select,textarea{
+  padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);width:100%}
+textarea{resize:vertical}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:.9rem;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.grid2{grid-template-columns:1fr}}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* Tabs */
+nav.tabs{display:flex;gap:2px;margin:20px 0 0;border-bottom:2px solid var(--line);overflow-x:auto}
+nav.tabs button{background:none;border:0;padding:10px 14px;font-family:"Barlow Condensed",sans-serif;font-size:1.22rem;font-weight:600;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--sign)}
+.count{display:inline-block;min-width:1.5em;margin-left:6px;padding:0 6px;border-radius:999px;background:var(--sign);color:var(--sign-ink);font-size:.92rem;text-align:center}
+.view{padding-top:18px}
+
+/* Setup */
+.setup{margin-bottom:18px}
+.setup ol{list-style:none;margin:8px 0 0;padding:0}
+.setup li{display:flex;gap:10px;align-items:baseline;padding:6px 0;border-top:1px solid var(--line)}
+.setup li:first-child{border-top:0}
+.setup .mark{flex:none;width:22px;height:22px;border-radius:50%;border:2px solid var(--line);display:inline-flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;transform:translateY(5px)}
+.setup .done .mark{background:var(--ok);border-color:var(--ok);color:#fff}
+
+/* Filters */
+.cats{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:.92rem}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip b{font-weight:600;margin-left:4px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+.toolbar input[type=search]{flex:1;min-width:180px;width:auto}
+.toolbar select{width:auto}
+
+/* Job cards */
+.feed{display:flex;flex-direction:column;gap:12px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.post-top{display:flex;gap:12px;align-items:flex-start}
+.post-main{flex:1;min-width:0}
+.post h3{margin:2px 0 0;font-size:1.38rem;line-height:1.15}
+.co{color:var(--muted)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.cat{font-size:.78rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;border:1px solid currentColor;border-radius:4px;padding:0 6px}
+.cat-Private{color:var(--c-private)} .cat-Bank{color:var(--c-bank)} .cat-Government{color:var(--c-government)} .cat-Remote{color:var(--c-remote)} .cat-Abroad{color:var(--c-abroad)}
+.new{background:var(--sign);color:var(--sign-ink);border-radius:4px;padding:0 6px;font-weight:600;font-size:.78rem}
+.unchecked{font-size:.8rem;color:var(--muted)}
+.fit{flex:none;text-align:center;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.5rem;line-height:1;border:2px solid var(--line);border-radius:6px;padding:4px 8px;min-width:54px}
+.fit small{display:block;font-size:.7rem;font-weight:600;color:var(--muted)}
+.fit.f4,.fit.f5{border-color:var(--ok);color:var(--ok)}
+.facts{display:flex;flex-wrap:wrap;gap:4px 18px;margin:10px 0 0;font-size:.93rem;color:var(--muted)}
+.facts strong{color:var(--ink);font-weight:600}
+.age{margin-top:8px;font-size:.93rem;border-left:3px solid var(--line);padding-left:8px}
+.age.ok{border-color:var(--ok)} .age.over{border-color:var(--warn);color:var(--warn);font-weight:600} .age.edge{border-color:var(--sign)}
+.post p{margin:10px 0 0}
+.post details{margin-top:8px}
+.post summary{cursor:pointer;color:var(--blue);font-weight:600;font-size:.95rem}
+.post ul{margin:6px 0 0;padding-left:20px}
+.why{font-size:.93rem;color:var(--muted);margin-top:6px}
+.post .row{margin-top:12px}
+.saved-tag{color:var(--ok);font-weight:600;font-size:.93rem}
+.urgent{color:var(--warn)!important;font-weight:600}
+.empty{padding:28px;text-align:center;border:1px dashed var(--line);border-radius:10px;color:var(--muted)}
+.runlog{margin-top:22px;font-size:.92rem;color:var(--muted)}
+.runlog summary{cursor:pointer}
+.runlog ul{margin:8px 0 0;padding-left:18px}
+
+/* Deadline board */
+.board{background:var(--board);color:var(--board-ink);border-radius:10px;padding:6px 0;overflow-x:auto;margin:10px 0 24px}
+.board-row{display:grid;grid-template-columns:86px 1fr auto;gap:16px;align-items:center;padding:10px 18px;border-top:1px solid rgba(255,255,255,.08);min-width:480px}
+.board-row:first-child{border-top:0}
+.days{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.9rem;line-height:1;background:var(--sign);color:var(--sign-ink);border-radius:4px;text-align:center;padding:6px 4px}
+.days small{display:block;font-size:.72rem;font-weight:600}
+.days.late{background:#E2553A;color:#fff}
+.days.calm{background:transparent;color:var(--board-ink);outline:1px solid rgba(255,255,255,.35)}
+.board-co{font-family:"Barlow Condensed",sans-serif;font-size:1.3rem;font-weight:600;line-height:1.1}
+.board-role{opacity:.75;font-size:.95rem}
+.board-date{font-family:"Barlow Condensed",sans-serif;font-size:1.15rem;opacity:.9;text-align:right}
+.board-empty{padding:18px;opacity:.8}
+@media (max-width:520px){.board-row{grid-template-columns:72px 1fr;min-width:0}.board-date{display:none}}
+@media (prefers-reduced-motion:no-preference){.board-row{animation:flip .35s ease-out both}}
+@keyframes flip{from{transform:rotateX(70deg);opacity:0}to{transform:none;opacity:1}}
+
+/* Tracker */
+.list{display:flex;flex-direction:column;gap:10px}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr auto;gap:6px 14px;align-items:start}
+.job .tick{width:22px;height:22px;margin-top:3px;accent-color:var(--ok)}
+.job h3{margin:0;font-size:1.28rem;line-height:1.15}
+.job .meta{grid-column:2/4;display:flex;flex-wrap:wrap;gap:4px 18px;font-size:.92rem;color:var(--muted)}
+.job .meta strong{color:var(--ink);font-weight:600}
+.job .notes{grid-column:2/4;font-size:.95rem;white-space:pre-wrap}
+.job .actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.job select{width:auto;padding:5px 8px}
+.job.closed{opacity:.6}
+@media (max-width:620px){.job{grid-template-columns:auto 1fr}.job .actions{grid-column:1/3;justify-content:flex-start}.job .meta,.job .notes{grid-column:1/3}}
+
+/* Dialogs */
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);padding:0}
+dialog::backdrop{background:rgba(10,18,26,.55)}
+dialog.sheet{width:min(900px,96vw);max-height:94dvh}
+dialog.small{width:min(580px,94vw)}
+@media (max-width:640px){dialog.sheet{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;margin:0;border-radius:0;border:0}.sheet-head{padding-top:calc(14px + env(safe-area-inset-top,0px))}.paper{padding:18px 16px}}
+@media (max-width:420px){nav.tabs button{padding:10px 10px;font-size:1.12rem}}
+.sheet-head{position:sticky;top:0;z-index:2;background:var(--surface);display:flex;gap:12px;align-items:flex-start;justify-content:space-between;padding:16px 18px 12px;border-bottom:1px solid var(--line)}
+.sheet-head h2{margin:2px 0 0;font-size:1.45rem;line-height:1.15}
+.sheet-body{padding:6px 18px 24px}
+.steps{list-style:none;margin:0;padding:0}
+.step{padding:14px 0;border-top:1px solid var(--line)}
+.step:first-child{border-top:0}
+.step h3{margin:0 0 6px;font-size:1.25rem}
+.step h3 .n{display:inline-block;width:1.5em;height:1.5em;line-height:1.5em;text-align:center;border-radius:50%;background:var(--sign);color:var(--sign-ink);font-size:.9rem;margin-right:6px}
+.kit-tabs{display:flex;gap:6px;margin:8px 0 10px;flex-wrap:wrap}
+.paper{background:#fff;color:#111;border:1px solid var(--line);border-radius:6px;padding:28px 30px;overflow-x:auto;max-height:70vh;overflow-y:auto}
+.paper:focus{outline:2px solid var(--blue)}
+#coverText{min-height:320px;font-size:.98rem;line-height:1.55}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
+.chips span{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:.88rem}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
+form.edit{padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+form.edit h2,form.edit .full{grid-column:1/3}
+form.edit textarea{min-height:90px}
+@media (max-width:520px){form.edit{grid-template-columns:1fr} form.edit h2,form.edit .full{grid-column:1}}
+
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:8px;font-size:.95rem;max-width:92vw;z-index:50;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.show{opacity:1}
+#printArea{display:none}
+@page{size:A4;margin:14mm 15mm}
+@media print{
+  .wrap,dialog,#toast{display:none!important}
+  body{background:#fff}
+  #printArea{display:block!important}
+}
+</style>
+<style id="cvStyle"></style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Job hunt desk</h1>
+    <p class="sub" id="status">Loading today’s jobs…</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="jobs" aria-selected="true">Jobs<span class="count" id="newCount" hidden></span></button>
+    <button role="tab" data-tab="applications" aria-selected="false">Applications</button>
+    <button role="tab" data-tab="resume" aria-selected="false">Resume</button>
+    <button role="tab" data-tab="settings" aria-selected="false">Settings</button>
+  </nav>
+
+  <!-- JOBS -->
+  <section class="view" id="view-jobs" role="tabpanel">
+    <div id="setup"></div>
+    <div class="cats" id="cats" aria-label="Job type"></div>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search title, organization or location" aria-label="Search jobs">
+      <select id="sort" aria-label="Sort">
+        <option value="found">Newest first</option>
+        <option value="fit">Best fit first</option>
+        <option value="deadline">Deadline soonest</option>
+      </select>
+      <button class="chip" id="onlyToday" aria-pressed="false">Found today</button>
+      <button class="chip" id="hideOver" aria-pressed="false" hidden>Hide over age limit</button>
+      <button class="chip" id="showHidden" aria-pressed="false">Show hidden</button>
+    </div>
+    <div class="feed" id="feed"></div>
+    <details class="runlog"><summary>What today’s search checked</summary><ul id="runlog"></ul></details>
+  </section>
+
+  <!-- APPLICATIONS -->
+  <section class="view" id="view-applications" role="tabpanel" hidden>
+    <h2>Upcoming deadlines</h2>
+    <div class="board" id="board"></div>
+    <h2>Checklist</h2>
+    <p class="sub" style="margin-bottom:12px">Tick the box when you’ve sent an application.</p>
+    <div class="toolbar" id="filters"></div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="view" id="view-resume" role="tabpanel" hidden>
+    <h2>Your master resume</h2>
+    <p class="sub">This is the full version. For each job, the app builds a tailored copy from it. Everything here is saved only in this browser.</p>
+    <div class="panel" style="margin-top:14px">
+      <strong>Contact details</strong>
+      <p class="note" style="margin:2px 0 10px">Added to every tailored resume on your device. They are never sent to the AI.</p>
+      <div class="grid2">
+        <label class="f">Full name<input type="text" id="c-name" autocomplete="name"></label>
+        <label class="f">Email<input type="email" id="c-email" autocomplete="email"></label>
+        <label class="f">Phone<input type="tel" id="c-phone" autocomplete="tel"></label>
+        <label class="f">Location<input type="text" id="c-location" placeholder="Dhaka, Bangladesh"></label>
+        <label class="f" style="grid-column:1/-1">LinkedIn or portfolio<input type="url" id="c-links" placeholder="https://linkedin.com/in/…"></label>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <div class="row" style="justify-content:space-between">
+        <strong>Resume content</strong>
+        <label class="btn ghost small" for="pdfFile">Import from a PDF</label>
+        <input type="file" id="pdfFile" accept="application/pdf,.pdf" hidden>
+      </div>
+      <p class="note" style="margin:2px 0 10px">Paste everything: summary, every role with all your bullets, education, awards, skills. More detail gives the tailoring more to choose from. Leave out phone and email.</p>
+      <textarea id="resumeBody" rows="22" placeholder="SUMMARY&#10;…&#10;&#10;EXPERIENCE&#10;Senior Product Manager, Company, Dhaka (Dec 2024 – present)&#10;- Bullet&#10;- Bullet&#10;&#10;EDUCATION&#10;MBA, Finance & Banking, University (2022)&#10;&#10;AWARDS&#10;…&#10;&#10;SKILLS&#10;…"></textarea>
+      <p class="note" id="resumeSaved" style="margin:6px 0 0"></p>
+      <p class="note" id="pdfStatus" role="status"></p>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section class="view" id="view-settings" role="tabpanel" hidden>
+    <div class="panel">
+      <h2>Free AI key</h2>
+      <p class="sub">Needed for resume tailoring. Get a free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a>. Don’t add billing to that Google account, so it can never charge you.</p>
+      <div class="row" style="margin-top:10px">
+        <input type="password" id="keyInput" placeholder="Paste your Gemini API key" style="flex:1;min-width:220px" autocomplete="off">
+        <button class="btn" id="keySave">Save</button>
+        <button class="btn ghost" id="keyTest">Test</button>
+      </div>
+      <p class="note" id="keyStatus" role="status"></p>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <h2>Age check</h2>
+      <p class="sub">Government and bank circulars have age limits. Add your date of birth and each job shows whether you’re within it. Saved only on this device.</p>
+      <label class="f" style="max-width:240px;margin-top:10px">Date of birth<input type="date" id="birthDate"></label>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <h2>Backup</h2>
+      <p class="sub">Your applications, resume and tailored kits live in this browser. Download a backup to keep them safe or to move them to your phone. The AI key isn’t included.</p>
+      <div class="row" style="margin-top:10px">
+        <button class="btn ghost" id="exportBtn">Download backup</button>
+        <label class="btn ghost" for="importFile">Load backup</label>
+        <input type="file" id="importFile" accept="application/json,.json" hidden>
+      </div>
+    </div>
+    <details class="panel" style="margin-top:14px">
+      <summary><strong>Advanced</strong></summary>
+      <label class="f" style="margin-top:10px">AI models to try for tailoring, in order (leave empty for the default)
+        <input type="text" id="models" placeholder="gemini-3.8-flash, gemini-3.6-flash, gemini-2.5-flash">
+      </label>
+      <p class="note">Change this only if tailoring says a model is unavailable. Model names are listed at ai.google.dev/gemini-api/docs/models.</p>
+    </details>
+  </section>
+</div>
+
+<!-- Application kit -->
+<dialog id="kit" class="sheet" aria-labelledby="kitTitle">
+  <div class="sheet-head">
+    <div style="min-width:0">
+      <div class="tags" id="kitTags"></div>
+      <h2 id="kitTitle"></h2>
+      <div class="co" id="kitOrg"></div>
+    </div>
+    <button class="btn ghost small" id="kitClose">Close</button>
+  </div>
+  <div class="sheet-body">
+    <ol class="steps">
+      <li class="step">
+        <h3><span class="n">1</span>Tailor your resume</h3>
+        <p class="note" id="kitIntro"></p>
+        <details id="jdBox"><summary class="note" style="cursor:pointer">Paste the full job description for a closer match</summary>
+          <textarea id="kitJD" rows="7" placeholder="Paste the full job description here" style="margin-top:8px"></textarea>
+        </details>
+        <div class="row" style="margin-top:10px">
+          <button class="btn" id="tailorBtn">Tailor my resume</button>
+          <span class="note" id="tailorStatus" role="status"></span>
+        </div>
+      </li>
+      <li class="step" id="reviewStep" hidden>
+        <h3><span class="n">2</span>Check it and download</h3>
+        <p class="note">You can edit the resume right on the page. Changes are saved.</p>
+        <div class="kit-tabs">
+          <button class="chip" data-kt="resume" aria-pressed="true">Resume</button>
+          <button class="chip" data-kt="cover" aria-pressed="false">Cover letter</button>
+          <button class="chip" data-kt="report" aria-pressed="false">Match report</button>
+        </div>
+        <div id="kt-resume"><div class="paper cv" id="cvEdit" contenteditable="true" spellcheck="true"></div>
+          <div class="row" style="margin-top:10px">
+            <button class="btn" id="pdfBtn">Save as PDF</button>
+            <button class="btn ghost" id="wordBtn">Download Word</button>
+          </div>
+        </div>
+        <div id="kt-cover" hidden><textarea id="coverText"></textarea>
+          <div class="row" style="margin-top:10px">
+            <button class="btn" id="copyCover">Copy</button>
+            <button class="btn ghost" id="coverPdf">Save as PDF</button>
+            <button class="btn ghost" id="coverWord">Download Word</button>
+          </div>
+        </div>
+        <div id="kt-report" hidden></div>
+      </li>
+      <li class="step">
+        <h3><span class="n" id="applyN">2</span>Apply</h3>
+        <div id="applyInfo"></div>
+        <div class="row" style="margin-top:10px" id="applyLinks"></div>
+      </li>
+      <li class="step">
+        <h3><span class="n" id="doneN">3</span>Mark it as applied</h3>
+        <p class="note">It moves to your Applications checklist with today’s date, so you can track the deadline and next steps.</p>
+        <button class="btn" id="appliedBtn">I’ve applied</button>
+        <span class="saved-tag" id="appliedTag" hidden>Marked as applied</span>
+      </li>
+    </ol>
+  </div>
+</dialog>
+
+<!-- Add / edit application -->
+<dialog id="editDlg" class="small">
+  <form class="edit" id="editForm">
+    <h2 id="editTitle">Add a job</h2>
+    <label class="f">Organization<input type="text" name="company" required></label>
+    <label class="f">Role<input type="text" name="role" required></label>
+    <label class="f">Type<select name="category"></select></label>
+    <label class="f">Status<select name="status"></select></label>
+    <label class="f">Location<input type="text" name="location" placeholder="Dhaka"></label>
+    <label class="f">Deadline<input type="date" name="deadline"></label>
+    <label class="f">Applied on<input type="date" name="appliedDate"></label>
+    <label class="f">Next step<input type="text" name="nextStep" placeholder="e.g. Written exam 5 Dec"></label>
+    <label class="f full">Link to post<input type="url" name="link" placeholder="https://"></label>
+    <label class="f full">Job description (used for tailoring)<textarea name="jd" placeholder="Paste the job post"></textarea></label>
+    <div class="full row"><button type="button" class="btn ghost small" id="fillFromJD">Fill details from the description</button><span class="note" id="fillStatus"></span></div>
+    <label class="f full">Notes<textarea name="notes"></textarea></label>
+    <div class="full row" style="justify-content:flex-end">
+      <button type="button" class="btn ghost" id="editCancel">Cancel</button>
+      <button type="submit" class="btn">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="printArea"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+/* ============================================================ basics */
+const CATS = ["Private","Bank","Government","Remote","Abroad"];
+const STATUSES = ["To apply","Applied","Assessment","Interview","Offer","Closed"];
+const OPEN = new Set(["To apply","Applied","Assessment","Interview","Offer"]);
+const LS = "jhd2-data", LS_KEY = "jhd2-gemini-key";
+const DEFAULT_MODELS = ["gemini-3.8-flash","gemini-3.6-flash","gemini-2.5-flash","gemini-3.5-flash-lite","gemini-2.5-flash-lite"];
+const CV_CSS = `
+.cv{font-family:Calibri,Carlito,Arial,Helvetica,sans-serif;color:#111;font-size:10.5pt;line-height:1.38;background:#fff}
+.cv h1{font-size:20pt;margin:0 0 2pt;font-weight:700;color:#111;font-family:Calibri,Carlito,Arial,sans-serif;line-height:1.1}
+.cv .cv-headline{font-size:11.5pt;color:#1F3B5A;margin:0 0 3pt;font-weight:600}
+.cv .cv-contact{font-size:9.5pt;color:#333;margin:0 0 6pt}
+.cv h2{font-size:10.5pt;text-transform:uppercase;letter-spacing:.8pt;color:#1F3B5A;border-bottom:1px solid #9AA9B8;margin:11pt 0 4pt;padding-bottom:2pt;font-family:Calibri,Carlito,Arial,sans-serif;font-weight:700}
+.cv p{margin:0 0 4pt}
+.cv table{width:100%;border-collapse:collapse;margin:6pt 0 1pt}
+.cv td{padding:0;vertical-align:top;font-size:10.5pt}
+.cv td.r{text-align:right;white-space:nowrap;color:#333;padding-left:8pt}
+.cv .cv-sub{color:#444;font-size:9.5pt}
+.cv ul{margin:2pt 0 2pt 16pt;padding:0}
+.cv li{margin:0 0 2pt}
+.cv .letter p{margin:0 0 9pt}`;
+document.getElementById("cvStyle").textContent = CV_CSS;
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pad = n => String(n).padStart(2,"0");
+const dkey = d => d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const today = () => dkey(new Date());
+const fmt = iso => iso ? new Date(iso+"T00:00:00").toLocaleDateString(undefined,{day:"numeric",month:"short",year:"numeric"}) : "";
+const daysUntil = iso => Math.round((new Date(iso+"T00:00:00") - new Date(today()+"T00:00:00"))/86400000);
+const safeUrl = u => /^https?:\/\//i.test(u||"") ? u : "";
+const plural = (n, w) => `${n} ${w}${n===1?"":"s"}`;
+const newId = () => "app_" + Date.now().toString(36) + Math.random().toString(36).slice(2,6);
+let toastTimer;
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("show"),3200); }
+function download(blob, name){ const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),2000); }
+const fileSafe = s => String(s||"").replace(/[\\/:*?"<>|]+/g," ").replace(/\s+/g," ").trim().slice(0,60);
+
+/* ============================================================ saved state (this browser only) */
+function blank(){ return {apps:[], hidden:[], saved:{}, resume:{contact:{}, body:""}, kits:{}, settings:{}}; }
+function normalize(v){ const b=blank(); return {apps:Array.isArray(v.apps)?v.apps:b.apps, hidden:Array.isArray(v.hidden)?v.hidden:[], saved:v.saved||{}, resume:{contact:(v.resume&&v.resume.contact)||{}, body:(v.resume&&v.resume.body)||""}, kits:v.kits||{}, settings:v.settings||{}}; }
+function loadState(){
+  try { const v = JSON.parse(localStorage.getItem(LS)); if (v && typeof v === "object") return normalize(v); } catch {}
+  try { const old = JSON.parse(localStorage.getItem("jobhunt-desk-v1")); if (old) return normalize({apps:old.jobs||[], hidden:old.hidden||[], saved:old.saved||{}}); } catch {}
+  return blank();
+}
+let S = loadState();
+function save(){ try { localStorage.setItem(LS, JSON.stringify(S)); } catch { toast("This browser couldn’t save. Download a backup in Settings."); } }
+const getKey = () => { try { return localStorage.getItem(LS_KEY) || ""; } catch { return ""; } };
+const setKey = k => { try { k ? localStorage.setItem(LS_KEY, k) : localStorage.removeItem(LS_KEY); } catch {} };
+
+/* ============================================================ Gemini (free tier), called from this browser */
+async function gemini(parts, {json=true, temperature=0.3, models}={}){
+  const key = getKey();
+  if (!key) throw new Error("NO_KEY");
+  const custom = (S.settings.models||"").split(",").map(s=>s.trim()).filter(Boolean);
+  const order = custom.length ? custom : (models || DEFAULT_MODELS);
+  let last = "FAILED";
+  for (const m of order){
+    let res;
+    try {
+      res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(m)}:generateContent`, {
+        method:"POST", headers:{"Content-Type":"application/json","x-goog-api-key":key},
+        body: JSON.stringify({contents:[{role:"user", parts: typeof parts === "string" ? [{text:parts}] : parts}],
+          generationConfig: json ? {responseMimeType:"application/json", temperature} : {temperature}})
+      });
+    } catch { last = "NETWORK"; continue; }
+    if (res.ok){
+      let data; try { data = await res.json(); } catch { last = "EMPTY"; continue; }
+      const text = ((data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts) || [])
+        .filter(p => !p.thought).map(p => p.text || "").join("");
+      if (!text){ last = "EMPTY"; continue; }
+      if (!json) return {model:m, value:text};
+      try { return {model:m, value:parseJSON(text)}; } catch { last = "UNREADABLE"; continue; }
+    }
+    const body = await res.text().catch(()=> "");
+    if ((res.status === 400 || res.status === 403) && /API[_ ]?KEY|API key not valid|PERMISSION_DENIED|referer|referrer/i.test(body)) throw new Error("BAD_KEY");
+    last = res.status === 429 ? "LIMIT" : String(res.status);
+  }
+  throw new Error(last);
+}
+function parseJSON(t){
+  t = t.trim().replace(/^```(?:json)?\s*/,"").replace(/\s*```$/,"");
+  try { return JSON.parse(t); } catch { const m = t.match(/[\[{][\s\S]*[\]}]/); if (m) return JSON.parse(m[0]); throw new Error("UNREADABLE"); }
+}
+function aiError(e){
+  const c = e && e.message;
+  return c === "NO_KEY" ? "Add your free AI key in Settings first."
+    : c === "BAD_KEY" ? "Google didn’t accept the AI key. Check it in Settings."
+    : c === "LIMIT" ? "Today’s free AI limit is used up. Try again later or tomorrow."
+    : c === "NETWORK" ? "Couldn’t reach Google’s AI. Check your connection."
+    : "The AI couldn’t do it this time. Try again in a minute.";
+}
+
+/* ============================================================ tabs */
+const TABS = ["jobs","applications","resume","settings"];
+function showTab(name, push){
+  if (!TABS.includes(name)) name = "jobs";
+  $$("nav.tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === name)));
+  TABS.forEach(t => $("#view-"+t).hidden = t !== name);
+  if (name === "applications") renderApps();
+  if (name === "resume") renderResume();
+  if (name === "settings") renderSettings();
+  if (name === "jobs") renderJobs();
+  if (push && location.hash !== "#"+name) history.replaceState(null, "", "#"+name);
+}
+$$("nav.tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab, true)));
+window.addEventListener("hashchange", () => showTab(location.hash.slice(1)));
+
+/* ============================================================ jobs feed */
+let FEED = {jobs:[], last_run:null};
+const F = {cat:"All", q:"", sort:"found", today:false, hidden:false, hideOver:false};
+
+async function loadFeed(){
+  try {
+    const r = await fetch("jobs.json?ts=" + Date.now(), {cache:"no-store"});
+    if (!r.ok) throw 0;
+    FEED = await r.json();
+    if (!Array.isArray(FEED.jobs)) FEED.jobs = [];
+  } catch {
+    $("#status").textContent = "Couldn’t load today’s jobs. Check your connection and reload.";
+  }
+  renderStatus(); renderJobs();
+}
+function renderStatus(){
+  const lr = FEED.last_run;
+  if (!lr || !lr.at){ $("#status").textContent = "The first daily search hasn’t run yet."; return; }
+  const when = new Date(lr.at).toLocaleString(undefined,{weekday:"short",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
+  $("#status").textContent = `Searched ${when}. ${plural(lr.new||0,"new job")}, ${FEED.jobs.length} open in the list.`;
+  $("#runlog").innerHTML = (lr.sources||[]).map(s => `<li><strong>${esc(s.source)}:</strong> ${esc(s.status)}</li>`).join("");
+}
+
+function ageInfo(j){
+  if (!j.max_age_years && !j.age_limit) return null;
+  const limit = j.age_limit || `${j.max_age_years} years`;
+  const bd = S.settings.birthDate;
+  if (!bd || !j.max_age_years) return {cls:"", text:`Age limit: ${limit}.` + (!bd ? " Add your date of birth in Settings to check it." : "")};
+  const ref = j.age_as_of || j.application_start || j.posted || today();
+  const b = new Date(bd+"T00:00:00"), r = new Date(ref+"T00:00:00");
+  let y = r.getFullYear()-b.getFullYear(), m = r.getMonth()-b.getMonth(), d = r.getDate()-b.getDate();
+  if (d < 0){ m--; d += new Date(r.getFullYear(), r.getMonth(), 0).getDate(); }
+  if (m < 0){ y--; m += 12; }
+  const max = Math.floor(j.max_age_years);
+  const you = `You’re ${y} years ${m} month${m===1?"":"s"}${d?` ${d} day${d===1?"":"s"}`:""} on ${fmt(ref)}`;
+  if (y > max || (y === max && (m > 0 || d > 0))) return {cls:"over", over:true, text:`Over the age limit (${limit}). ${you}. Some circulars allow more for certain quotas, so check the circular.`};
+  if (y === max || (y === max - 1 && m >= 9)) return {cls:"edge", text:`Within the age limit (${limit}), but close. ${you}.`};
+  return {cls:"ok", text:`Within the age limit (${limit}). ${you}.`};
+}
+
+function renderSetup(){
+  const steps = [
+    {done: !!(FEED.last_run && FEED.last_run.at), text: "Daily search is running", hint: "In GitHub, open Actions, then Daily job search, then Run workflow."},
+    {done: !!getKey(), text: "Free AI key added", hint: "Needed for resume tailoring.", go:"settings"},
+    {done: (S.resume.body||"").trim().length > 200, text: "Master resume added", hint: "Every tailored resume is built from it.", go:"resume"},
+  ];
+  if (steps.every(s => s.done)){ $("#setup").innerHTML = ""; return; }
+  $("#setup").innerHTML = `<div class="panel setup"><strong>Finish setting up</strong><ol>${steps.map(s =>
+    `<li class="${s.done?"done":""}"><span class="mark">${s.done?"✓":""}</span><span>${esc(s.text)}${s.done?"":`. <span class="note">${esc(s.hint)}</span>${s.go?` <a href="#${s.go}">Open</a>`:""}`}</span></li>`).join("")}</ol></div>`;
+}
+
+function renderJobs(){
+  renderSetup();
+  const hidden = new Set(S.hidden), t = today();
+  const visible = FEED.jobs.filter(j => F.hidden || !hidden.has(j.id));
+  const counts = {All: visible.length}; CATS.forEach(c => counts[c] = visible.filter(j => j.category === c).length);
+  $("#cats").innerHTML = ["All",...CATS].filter(c => c === "All" || counts[c]).map(c =>
+    `<button class="chip" data-cat="${c}" aria-pressed="${F.cat===c}">${c==="Government"?"Government":c}<b>${counts[c]}</b></button>`).join("");
+  $("#hideOver").hidden = !S.settings.birthDate;
+
+  let list = visible.filter(j => F.cat === "All" || j.category === F.cat);
+  if (F.today) list = list.filter(j => j.found_on === t);
+  if (F.hideOver) list = list.filter(j => { const a = ageInfo(j); return !(a && a.over); });
+  if (F.q){ const q = F.q.toLowerCase(); list = list.filter(j => [j.title,j.organization,j.location,j.summary,j.category].join(" ").toLowerCase().includes(q)); }
+  list.sort((a,b) => F.sort === "fit" ? (b.fit||0)-(a.fit||0)
+    : F.sort === "deadline" ? (a.deadline||"9999").localeCompare(b.deadline||"9999")
+    : (b.found_on||"").localeCompare(a.found_on||"") || (b.fit||0)-(a.fit||0));
+
+  const fresh = FEED.jobs.filter(j => j.found_on === t && !hidden.has(j.id)).length;
+  $("#newCount").hidden = !fresh; $("#newCount").textContent = fresh;
+
+  $("#feed").innerHTML = list.length ? list.map(jobCard).join("")
+    : `<div class="empty">${FEED.jobs.length ? "No jobs match these filters." : "No jobs yet. They’ll appear after the next morning search."}</div>`;
+}
+
+function jobCard(j){
+  const t = today(), n = j.deadline ? daysUntil(j.deadline) : null, age = ageInfo(j);
+  const url = safeUrl(j.url), apply = safeUrl(j.apply_url), kit = S.kits[j.id];
+  const tracked = S.saved[j.id] || S.apps.some(a => a.jobId === j.id), isHidden = S.hidden.includes(j.id);
+  const facts = [
+    j.deadline ? `<span class="${n<=3?"urgent":""}">Deadline <strong class="${n<=3?"urgent":""}">${esc(fmt(j.deadline))}</strong> (${n===0?"today":plural(n,"day")})</span>` : `<span>No deadline listed</span>`,
+    j.application_start && j.application_start > t ? `<span>Opens <strong>${esc(fmt(j.application_start))}</strong></span>` : "",
+    j.vacancies ? `<span>Vacancies <strong>${esc(j.vacancies)}</strong></span>` : "",
+    j.experience ? `<span>Experience <strong>${esc(j.experience)}</strong></span>` : "",
+    j.salary ? `<span>Salary <strong>${esc(j.salary)}</strong></span>` : "",
+    j.fee ? `<span>Fee <strong>${esc(j.fee)}</strong></span>` : "",
+    j.source ? `<span>Via <strong>${esc(j.source)}</strong></span>` : "",
+  ].join("");
+  return `<article class="post" data-id="${esc(j.id)}">
+    <div class="post-top">
+      <div class="post-main">
+        <div class="tags"><span class="cat cat-${esc(j.category)}">${esc(j.category)}</span>${j.found_on===t?'<span class="new">New</span>':""}${j.ai===false?'<span class="unchecked">Not checked by AI yet</span>':""}</div>
+        <h3>${esc(j.title)}</h3>
+        <div class="co">${esc(j.organization||"")}${j.location?", "+esc(j.location):""}${j.work_type?" ("+esc(j.work_type)+")":""}</div>
+      </div>
+      ${j.fit?`<div class="fit f${j.fit}" title="How well it fits your profile">${j.fit}/5<small>fit</small></div>`:""}
+    </div>
+    <div class="facts">${facts}</div>
+    ${age?`<div class="age ${age.cls}">${esc(age.text)}</div>`:""}
+    ${j.summary?`<p>${esc(j.summary)}</p>`:""}
+    ${(j.requirements&&j.requirements.length)||j.how_to_apply?`<details><summary>Requirements and how to apply</summary>
+      ${j.requirements&&j.requirements.length?`<ul>${j.requirements.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:""}
+      ${j.how_to_apply?`<p class="note">${esc(j.how_to_apply)}</p>`:""}</details>`:""}
+    ${j.fit_reason?`<div class="why">${esc(j.fit_reason)}</div>`:""}
+    <div class="row">
+      <button class="btn small" data-act="kit">${kit?"Open application kit":"Prepare application"}</button>
+      ${url?`<a class="btn ghost small" href="${esc(url)}" target="_blank" rel="noopener">Open the post</a>`:""}
+      ${apply&&apply!==url?`<a class="btn ghost small" href="${esc(apply)}" target="_blank" rel="noopener">Application page</a>`:""}
+      ${tracked?`<span class="saved-tag">In your applications</span>`:`<button class="btn ghost small" data-act="track">Track</button>`}
+      <button class="linkbtn" data-act="${isHidden?"unhide":"hide"}">${isHidden?"Show again":"Not interested"}</button>
+    </div>
+  </article>`;
+}
+
+$("#cats").addEventListener("click", e => { const b = e.target.closest(".chip"); if (b){ F.cat = b.dataset.cat; renderJobs(); } });
+$("#q").addEventListener("input", e => { F.q = e.target.value.trim(); renderJobs(); });
+$("#sort").addEventListener("change", e => { F.sort = e.target.value; renderJobs(); });
+for (const [id, k] of [["#onlyToday","today"],["#showHidden","hidden"],["#hideOver","hideOver"]])
+  $(id).addEventListener("click", e => { F[k] = !F[k]; e.currentTarget.setAttribute("aria-pressed", String(F[k])); renderJobs(); });
+$("#feed").addEventListener("click", e => {
+  const b = e.target.closest("[data-act]"); if (!b) return;
+  const id = b.closest(".post").dataset.id, j = FEED.jobs.find(x => x.id === id); if (!j) return;
+  if (b.dataset.act === "kit") return openKit(targetFromJob(j));
+  if (b.dataset.act === "track"){ trackJob(j); toast("Added to your applications"); }
+  if (b.dataset.act === "hide") S.hidden = [...new Set([...S.hidden, id])].slice(-800);
+  if (b.dataset.act === "unhide") S.hidden = S.hidden.filter(x => x !== id);
+  save(); renderJobs();
+});
+function trackJob(j, status){
+  let a = S.apps.find(x => x.jobId === j.id);
+  if (!a){
+    a = {id:newId(), jobId:j.id, company:j.organization||"", role:j.title, category:j.category, location:j.location||"",
+      status:"To apply", applied:false, appliedDate:"", deadline:j.deadline||"", nextStep:"", link:j.apply_url||j.url||"",
+      jd:j.jd_text||"", notes:[j.summary, j.fit?`Fit ${j.fit}/5: ${j.fit_reason||""}`:""].filter(Boolean).join("\n"), createdAt:Date.now()};
+    S.apps.push(a);
+  }
+  if (status === "Applied"){ a.status = OPEN.has(a.status) && a.status !== "To apply" ? a.status : "Applied"; a.applied = true; a.appliedDate = a.appliedDate || today(); }
+  S.saved[j.id] = true; save(); return a;
+}
+
+/* ============================================================ application kit */
+let T = null; // what the kit is for
+function targetFromJob(j){
+  return {key:j.id, jobId:j.id, title:j.title, organization:j.organization||"", category:j.category||"Private", location:j.location||"",
+    deadline:j.deadline||"", summary:j.summary||"", requirements:j.requirements||[], experience:j.experience||"", how_to_apply:j.how_to_apply||"",
+    fee:j.fee||"", documents:j.documents||[], job:j, url:safeUrl(j.url), apply_url:safeUrl(j.apply_url), jd_text:j.jd_text||""};
+}
+function targetFromApp(a){
+  const j = a.jobId ? FEED.jobs.find(x => x.id === a.jobId) : null;
+  if (j) return {...targetFromJob(j), appId:a.id, jd_text: a.jd || j.jd_text || ""};
+  return {key:"app:"+a.id, appId:a.id, title:a.role, organization:a.company, category:a.category||"Private", location:a.location||"",
+    deadline:a.deadline||"", summary:"", requirements:[], experience:"", how_to_apply:"", fee:"", documents:[], job:null,
+    url:safeUrl(a.link), apply_url:"", jd_text:a.jd||""};
+}
+function openKit(target){
+  T = target;
+  $("#kitTags").innerHTML = `<span class="cat cat-${esc(T.category)}">${esc(T.category)}</span>`;
+  $("#kitTitle").textContent = T.title;
+  $("#kitOrg").textContent = [T.organization, T.location].filter(Boolean).join(", ");
+  $("#kitJD").value = (S.kits[T.key] && S.kits[T.key].jd) || "";
+  const hasJD = (T.jd_text||"").length > 300;
+  $("#kitIntro").textContent = hasJD
+    ? "The AI rewrites your master resume around this job’s requirements, using only facts from your resume. It also writes a cover letter and shows what’s missing."
+    : "The saved details for this job are short. For a closer match, paste the full job description below first.";
+  $("#jdBox").open = !hasJD && !$("#kitJD").value;
+  $("#tailorStatus").textContent = "";
+  renderKitResult(); renderApplyStep();
+  if (!$("#kit").open) $("#kit").showModal();
+  $("#kit .sheet-body").scrollTop = 0;
+}
+$("#kitClose").addEventListener("click", () => $("#kit").close());
+$("#kit").addEventListener("close", () => { renderJobs(); if (!$("#view-applications").hidden) renderApps(); });
+
+function renderApplyStep(){
+  const a = T.job ? ageInfo(T.job) : null;
+  const lines = [
+    T.deadline ? `<li>Deadline: <strong>${esc(fmt(T.deadline))}</strong> (${daysUntil(T.deadline)<0?"passed":daysUntil(T.deadline)===0?"today":plural(daysUntil(T.deadline),"day")+" left"})</li>` : "",
+    T.fee ? `<li>Application fee: <strong>${esc(T.fee)}</strong></li>` : "",
+    a ? `<li>${esc(a.text)}</li>` : "",
+    T.how_to_apply ? `<li>${esc(T.how_to_apply)}</li>` : "",
+    T.documents && T.documents.length ? `<li>Have ready: ${T.documents.map(esc).join("; ")}</li>` : "",
+  ].join("");
+  $("#applyInfo").innerHTML = lines ? `<ul style="margin:0;padding-left:20px">${lines}</ul>` : `<p class="note" style="margin:0">Open the post for the application steps.</p>`;
+  $("#applyLinks").innerHTML = [
+    T.apply_url ? `<a class="btn" href="${esc(T.apply_url)}" target="_blank" rel="noopener">Open the application page</a>` : "",
+    T.url ? `<a class="btn ${T.apply_url?"ghost":""}" href="${esc(T.url)}" target="_blank" rel="noopener">Open the post</a>` : "",
+  ].join("");
+  const app = T.appId ? S.apps.find(x => x.id === T.appId) : S.apps.find(x => x.jobId === T.jobId);
+  const done = app && app.applied;
+  $("#appliedBtn").hidden = !!done; $("#appliedTag").hidden = !done;
+  if (done) $("#appliedTag").textContent = `Marked as applied${app.appliedDate?" on "+fmt(app.appliedDate):""}`;
+  const hasKit = !!S.kits[T.key];
+  $("#applyN").textContent = hasKit ? "3" : "2"; $("#doneN").textContent = hasKit ? "4" : "3";
+}
+$("#appliedBtn").addEventListener("click", () => {
+  if (T.appId){ const a = S.apps.find(x => x.id === T.appId); if (a){ a.applied = true; a.status = a.status === "To apply" ? "Applied" : a.status; a.appliedDate = a.appliedDate || today(); } save(); }
+  else if (T.job) trackJob(T.job, "Applied");
+  renderApplyStep(); toast("Marked as applied. Good luck!");
+});
+
+function tailorPrompt(jd){
+  const sector = T.category === "Government" || T.category === "Bank" ? "Bangladesh’s public and banking sector" : "product management hiring";
+  return `You are an expert resume writer for ${sector}. Tailor the candidate's MASTER RESUME to the JOB below so it passes applicant-tracking systems and convinces the hiring team.
+
+Hard rules:
+- Use only facts from the master resume. Never add an employer, job title, date, degree, certification, award, tool, number or achievement that is not in it.
+- You may reorder sections and bullets, keep only the most relevant bullets, merge or shorten bullets, rephrase with the job's own words where they truthfully describe the same work, and write a new headline and summary from the facts.
+- Keep company names, job titles and dates exactly as in the master resume.
+- Most relevant role: up to 6 bullets. Other roles: up to 3 each. Lead with the strongest, most relevant bullets. Start bullets with strong verbs and keep numbers that are in the master resume.
+- Keep it to about one page for roles with under 10 years of experience. Plain text inside fields, no markdown, English.
+- Do not include contact details.
+- Cover letter: 180 to 250 words, specific to this job and organization, using only facts from the master resume. Begin with "Dear ${T.category==="Government"||T.category==="Bank"?"Recruitment Committee":"Hiring Manager"}," and end with "Sincerely,\\n{{NAME}}".
+
+Reply with one JSON object:
+{"headline": "...", "summary": "3 to 4 sentences",
+ "skills": ["8 to 14 skills from the resume, most relevant first"],
+ "experience": [{"company": "...", "title": "...", "location": "", "dates": "...", "bullets": ["..."]}],
+ "education": [{"degree": "...", "school": "...", "dates": "", "details": ""}],
+ "extras": [{"heading": "Awards", "items": ["..."]}],
+ "matched": ["job requirements the resume clearly shows"],
+ "missing": ["job requirements the resume does not show"],
+ "changes": ["3 to 6 short notes on what you changed and why"],
+ "cover_letter": "..."}
+
+JOB
+Title: ${T.title}
+Organization: ${T.organization}
+Type: ${T.category}
+Location: ${T.location||"not stated"}
+Summary: ${T.summary||"not stated"}
+Requirements: ${(T.requirements||[]).join("; ")||"not stated"}
+Experience asked: ${T.experience||"not stated"}
+Full description:
+${(jd || T.jd_text || "not available").slice(0,9000)}
+
+MASTER RESUME
+${S.resume.body.slice(0,14000)}`;
+}
+
+$("#tailorBtn").addEventListener("click", async () => {
+  if (!getKey()){ $("#tailorStatus").innerHTML = `Add your free AI key in <a href="#settings">Settings</a> first.`; return; }
+  if ((S.resume.body||"").trim().length < 200){ $("#tailorStatus").innerHTML = `Add your master resume in <a href="#resume">Resume</a> first.`; return; }
+  const btn = $("#tailorBtn"), jd = $("#kitJD").value.trim();
+  btn.disabled = true; $("#tailorStatus").innerHTML = `<span class="spinner"></span>Tailoring… this takes about 20 seconds.`;
+  try {
+    const {model, value:r} = await gemini(tailorPrompt(jd), {temperature:0.35});
+    if (!r || !Array.isArray(r.experience) || !r.experience.length) throw new Error("UNREADABLE");
+    const name = (S.resume.contact.name || "").trim() || "[Your name]";
+    S.kits[T.key] = {created:Date.now(), model, jd, r, html:"", cover:String(r.cover_letter||"").replace(/\{\{NAME\}\}/g, name)};
+    S.kits[T.key].html = cvHTML(r, S.resume.contact);
+    save(); renderKitResult(); renderApplyStep();
+    $("#tailorStatus").textContent = "Done. Check it below before you send it.";
+    $("#reviewStep").scrollIntoView({behavior:"smooth", block:"start"});
+  } catch (e){ $("#tailorStatus").textContent = aiError(e); }
+  finally { btn.disabled = false; }
+});
+
+function cvHTML(r, c){
+  const sec = (h, inner) => inner ? `<h2>${esc(h)}</h2>${inner}` : "";
+  const contact = [c.location, c.phone, c.email, c.links].filter(Boolean).map(esc).join(" &nbsp;|&nbsp; ");
+  const list = a => Array.isArray(a) ? a.filter(Boolean) : [];
+  return `<h1>${esc(c.name || "Your name")}</h1>
+${r.headline ? `<div class="cv-headline">${esc(r.headline)}</div>` : ""}
+${contact ? `<div class="cv-contact">${contact}</div>` : ""}
+${sec("Summary", r.summary ? `<p>${esc(r.summary)}</p>` : "")}
+${sec("Core skills", list(r.skills).length ? `<p>${list(r.skills).map(esc).join(" &nbsp;•&nbsp; ")}</p>` : "")}
+${sec("Experience", list(r.experience).map(x => `<table><tr><td><strong>${esc(x.title)}</strong>, ${esc(x.company)}${x.location?` <span class="cv-sub">(${esc(x.location)})</span>`:""}</td><td class="r">${esc(x.dates||"")}</td></tr></table><ul>${list(x.bullets).map(b => `<li>${esc(b)}</li>`).join("")}</ul>`).join(""))}
+${sec("Education", list(r.education).map(x => `<table><tr><td><strong>${esc(x.degree)}</strong>${x.school?`, ${esc(x.school)}`:""}${x.details?`<div class="cv-sub">${esc(x.details)}</div>`:""}</td><td class="r">${esc(x.dates||"")}</td></tr></table>`).join(""))}
+${list(r.extras).map(s => sec(s.heading||"Other", list(s.items).length ? `<ul>${list(s.items).map(i => `<li>${esc(i)}</li>`).join("")}</ul>` : "")).join("")}`;
+}
+
+function renderKitResult(){
+  const k = T && S.kits[T.key];
+  $("#reviewStep").hidden = !k;
+  $("#tailorBtn").textContent = k ? "Tailor again" : "Tailor my resume";
+  if (!k) return;
+  $("#cvEdit").innerHTML = k.html || cvHTML(k.r, S.resume.contact);
+  $("#coverText").value = k.cover || "";
+  const r = k.r || {}, li = a => (Array.isArray(a)?a:[]).map(x => `<li>${esc(x)}</li>`).join("");
+  $("#kt-report").innerHTML = `
+    ${(r.matched||[]).length ? `<strong>What your resume shows</strong><div class="chips">${r.matched.map(m => `<span>${esc(m)}</span>`).join("")}</div>` : ""}
+    ${(r.missing||[]).length ? `<strong>What the job asks for that your resume doesn’t show</strong><ul>${li(r.missing)}</ul><p class="note">If you do have this experience, add it to your master resume and tailor again. Nothing was invented to fill these gaps.</p>` : ""}
+    ${(r.changes||[]).length ? `<strong>What was changed</strong><ul>${li(r.changes)}</ul>` : ""}
+    <p class="note">Made ${esc(new Date(k.created).toLocaleString())} with ${esc(k.model||"Gemini")}.</p>`;
+  setKitTab("resume");
+}
+function setKitTab(name){
+  $$("[data-kt]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.kt === name)));
+  ["resume","cover","report"].forEach(n => $("#kt-"+n).hidden = n !== name);
+}
+$$("[data-kt]").forEach(b => b.addEventListener("click", () => setKitTab(b.dataset.kt)));
+let editTimer;
+$("#cvEdit").addEventListener("input", () => { clearTimeout(editTimer); editTimer = setTimeout(() => { const k = S.kits[T.key]; if (k){ k.html = $("#cvEdit").innerHTML; save(); } }, 500); });
+$("#coverText").addEventListener("input", () => { clearTimeout(editTimer); editTimer = setTimeout(() => { const k = S.kits[T.key]; if (k){ k.cover = $("#coverText").value; save(); } }, 500); });
+
+function letterHTML(text){ return `<div class="letter">${text.split(/\n{2,}/).map(p => `<p>${esc(p).replace(/\n/g,"<br>")}</p>`).join("")}</div>`; }
+function printDoc(inner, title){
+  const area = $("#printArea"), old = document.title;
+  area.innerHTML = `<div class="cv">${inner}</div>`;
+  document.title = title;
+  const done = () => { area.innerHTML = ""; document.title = old; window.removeEventListener("afterprint", done); };
+  window.addEventListener("afterprint", done);
+  setTimeout(() => window.print(), 50);
+}
+function wordDoc(inner, name){
+  const doc = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>${esc(name)}</title><style>@page{size:21cm 29.7cm;margin:1.4cm 1.5cm}body{margin:0}${CV_CSS}</style></head><body><div class="cv">${inner}</div></body></html>`;
+  download(new Blob(["\ufeff", doc], {type:"application/msword"}), fileSafe(name) + ".doc");
+}
+const docName = kind => `${kind} - ${S.resume.contact.name || "Me"} - ${T.organization || T.title}`;
+$("#pdfBtn").addEventListener("click", () => printDoc($("#cvEdit").innerHTML, docName("Resume")));
+$("#wordBtn").addEventListener("click", () => wordDoc($("#cvEdit").innerHTML, docName("Resume")));
+$("#coverPdf").addEventListener("click", () => printDoc(letterHTML($("#coverText").value), docName("Cover letter")));
+$("#coverWord").addEventListener("click", () => wordDoc(letterHTML($("#coverText").value), docName("Cover letter")));
+$("#copyCover").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText($("#coverText").value); toast("Cover letter copied"); }
+  catch { $("#coverText").select(); toast("Select all and copy"); }
+});
+
+/* ============================================================ applications */
+let appFilter = "All", editingId = null;
+function renderApps(){
+  const apps = S.apps;
+  const dl = apps.filter(a => OPEN.has(a.status) && a.deadline).sort((a,b) => a.deadline.localeCompare(b.deadline)).slice(0,6);
+  $("#board").innerHTML = dl.length ? dl.map(a => {
+    const n = daysUntil(a.deadline), cls = n < 0 ? "late" : n > 14 ? "calm" : "";
+    const label = n < 0 ? "passed" : n === 0 ? "today" : n === 1 ? "day" : "days";
+    return `<div class="board-row"><div class="days ${cls}">${Math.abs(n)}<small>${label}</small></div>
+      <div><div class="board-co">${esc(a.company)}</div><div class="board-role">${esc(a.role)}${a.applied?"":" (not applied yet)"}</div></div>
+      <div class="board-date">${esc(fmt(a.deadline))}</div></div>`;
+  }).join("") : `<div class="board-empty">No deadlines yet. Add one to a job and it shows up here.</div>`;
+
+  const counts = {All:apps.length}; STATUSES.forEach(s => counts[s] = apps.filter(a => a.status === s).length);
+  $("#filters").innerHTML = ["All",...STATUSES].map(s => `<button class="chip" data-f="${s}" aria-pressed="${appFilter===s}">${s}<b>${counts[s]}</b></button>`).join("")
+    + `<button class="btn" id="addApp" style="margin-left:auto">Add a job</button>`;
+
+  const shown = apps.filter(a => appFilter === "All" || a.status === appFilter).sort((a,b) => {
+    const oa = OPEN.has(a.status)?0:1, ob = OPEN.has(b.status)?0:1; if (oa !== ob) return oa-ob;
+    if (a.deadline && b.deadline) return a.deadline.localeCompare(b.deadline);
+    if (a.deadline) return -1; if (b.deadline) return 1;
+    return (b.createdAt||0)-(a.createdAt||0);
+  });
+  $("#list").innerHTML = shown.length ? shown.map(a => {
+    const n = a.deadline ? daysUntil(a.deadline) : null, urgent = n !== null && n <= 3 && OPEN.has(a.status);
+    const url = safeUrl(a.link), kitKey = a.jobId && S.kits[a.jobId] ? a.jobId : "app:"+a.id;
+    return `<article class="job ${a.status==="Closed"?"closed":""}" data-id="${esc(a.id)}">
+      <input type="checkbox" class="tick" data-act="tick" ${a.applied?"checked":""} aria-label="Applied to ${esc(a.company)}">
+      <div><div class="tags">${a.category?`<span class="cat cat-${esc(a.category)}">${esc(a.category)}</span>`:""}</div><h3>${esc(a.company)}</h3><div class="co">${esc(a.role)}${a.location?", "+esc(a.location):""}</div></div>
+      <div class="actions">
+        <select data-act="status" aria-label="Status">${STATUSES.map(s => `<option ${s===a.status?"selected":""}>${s}</option>`).join("")}</select>
+        <button class="btn ghost small" data-act="kit">${S.kits[kitKey]?"Kit":"Prepare"}</button>
+        <button class="linkbtn" data-act="edit">Edit</button>
+        <button class="linkbtn" data-act="del">Delete</button>
+      </div>
+      <div class="meta">
+        ${a.appliedDate?`<span>Applied <strong>${esc(fmt(a.appliedDate))}</strong></span>`:""}
+        ${a.deadline?`<span class="${urgent?"urgent":""}">Deadline <strong class="${urgent?"urgent":""}">${esc(fmt(a.deadline))}</strong>${n<0?" (passed)":n===0?" (today)":` (${plural(n,"day")})`}</span>`:`<span>No deadline set</span>`}
+        ${a.nextStep?`<span>Next: <strong>${esc(a.nextStep)}</strong></span>`:""}
+        ${url?`<a href="${esc(url)}" target="_blank" rel="noopener">Job post</a>`:""}
+      </div>
+      ${a.notes?`<div class="notes">${esc(a.notes)}</div>`:""}
+    </article>`;
+  }).join("") : `<div class="empty">${appFilter==="All"?"Nothing here yet. Track a job from the Jobs tab, or add one by hand.":"No jobs with status “"+esc(appFilter)+"”."}</div>`;
+}
+$("#view-applications").addEventListener("click", e => {
+  const t = e.target;
+  if (t.matches(".chip[data-f]")){ appFilter = t.dataset.f; renderApps(); return; }
+  if (t.id === "addApp") return openEdit(null);
+  const card = t.closest(".job"); if (!card) return;
+  const a = S.apps.find(x => x.id === card.dataset.id); if (!a) return;
+  if (t.dataset.act === "edit") openEdit(a);
+  if (t.dataset.act === "kit") openKit(targetFromApp(a));
+  if (t.dataset.act === "del" && confirm(`Delete ${a.company}, ${a.role}?`)){
+    S.apps = S.apps.filter(x => x.id !== a.id); if (a.jobId) delete S.saved[a.jobId]; save(); renderApps();
+  }
+});
+$("#view-applications").addEventListener("change", e => {
+  const t = e.target, card = t.closest(".job"); if (!card) return;
+  const a = S.apps.find(x => x.id === card.dataset.id); if (!a) return;
+  if (t.dataset.act === "tick"){
+    if (t.checked){ a.applied = true; if (a.status === "To apply") a.status = "Applied"; a.appliedDate = a.appliedDate || today(); }
+    else { a.applied = false; a.status = "To apply"; }
+  }
+  if (t.dataset.act === "status"){
+    a.status = t.value;
+    if (t.value === "To apply") a.applied = false;
+    else if (t.value !== "Closed"){ a.applied = true; a.appliedDate = a.appliedDate || today(); }
+  }
+  save(); renderApps();
+});
+function openEdit(a){
+  editingId = a ? a.id : null;
+  const f = $("#editForm");
+  $("#editTitle").textContent = a ? "Edit job" : "Add a job";
+  f.status.innerHTML = STATUSES.map(s => `<option>${s}</option>`).join("");
+  f.category.innerHTML = CATS.map(c => `<option>${c}</option>`).join("");
+  ["company","role","location","appliedDate","deadline","nextStep","link","notes","jd"].forEach(n => f[n].value = (a && a[n]) || "");
+  f.status.value = (a && a.status) || "To apply"; f.category.value = (a && a.category) || "Private";
+  $("#fillStatus").textContent = "";
+  $("#editDlg").showModal(); f.company.focus();
+}
+$("#editCancel").addEventListener("click", () => $("#editDlg").close());
+$("#editForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, prev = S.apps.find(x => x.id === editingId) || {};
+  const status = f.status.value;
+  const a = {...prev, id: editingId || newId(), company:f.company.value.trim(), role:f.role.value.trim(), category:f.category.value,
+    location:f.location.value.trim(), status, deadline:f.deadline.value, appliedDate:f.appliedDate.value, nextStep:f.nextStep.value.trim(),
+    link:f.link.value.trim(), jd:f.jd.value.trim(), notes:f.notes.value.trim(),
+    applied: status === "To apply" ? false : status === "Closed" ? !!prev.applied : true, createdAt: prev.createdAt || Date.now()};
+  if (a.applied && !a.appliedDate) a.appliedDate = today();
+  S.apps = editingId ? S.apps.map(x => x.id === editingId ? a : x) : [...S.apps, a];
+  save(); $("#editDlg").close(); renderApps();
+});
+$("#fillFromJD").addEventListener("click", async () => {
+  const f = $("#editForm"), jd = f.jd.value.trim();
+  if (jd.length < 80){ $("#fillStatus").textContent = "Paste the job description first."; return; }
+  $("#fillStatus").innerHTML = `<span class="spinner"></span>Reading…`;
+  try {
+    const {value:r} = await gemini(`Today is ${today()}. Read this job post and reply with one JSON object: {"company": "", "role": "", "location": "", "deadline": "YYYY-MM-DD or empty", "category": "Private" | "Bank" | "Government" | "Remote" | "Abroad"}. Use only what the post says; leave a field empty if it isn't stated.\n\nJOB POST:\n${jd.slice(0,9000)}`, {temperature:0.1, models:["gemini-3.5-flash-lite","gemini-2.5-flash-lite","gemini-2.5-flash"]});
+    if (r.company && !f.company.value) f.company.value = r.company;
+    if (r.role && !f.role.value) f.role.value = r.role;
+    if (r.location && !f.location.value) f.location.value = r.location;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(r.deadline||"") && !f.deadline.value) f.deadline.value = r.deadline;
+    if (CATS.includes(r.category)) f.category.value = r.category;
+    $("#fillStatus").textContent = "Filled in what the post states. Check it before saving.";
+  } catch (e){ $("#fillStatus").textContent = aiError(e); }
+});
+
+/* ============================================================ resume */
+const CONTACT = ["name","email","phone","location","links"];
+function renderResume(){
+  CONTACT.forEach(k => { const el = $("#c-"+k); if (document.activeElement !== el) el.value = S.resume.contact[k] || ""; });
+  if (document.activeElement !== $("#resumeBody")) $("#resumeBody").value = S.resume.body || "";
+  const len = (S.resume.body||"").trim().length;
+  $("#resumeSaved").textContent = len ? `${len.toLocaleString()} characters, saved in this browser.` : "";
+}
+let resumeTimer;
+function saveResumeSoon(){ clearTimeout(resumeTimer); resumeTimer = setTimeout(() => {
+  CONTACT.forEach(k => S.resume.contact[k] = $("#c-"+k).value.trim());
+  S.resume.body = $("#resumeBody").value; save(); renderResume(); renderSetup(); }, 400); }
+CONTACT.forEach(k => $("#c-"+k).addEventListener("input", saveResumeSoon));
+$("#resumeBody").addEventListener("input", saveResumeSoon);
+$("#pdfFile").addEventListener("change", async e => {
+  const file = e.target.files[0]; e.target.value = ""; if (!file) return;
+  if (!getKey()){ $("#pdfStatus").textContent = "Add your free AI key in Settings first, or paste the text instead."; return; }
+  if (file.size > 8*1024*1024){ $("#pdfStatus").textContent = "That PDF is too large. Use one under 8 MB."; return; }
+  if ((S.resume.body||"").trim() && !confirm("Replace the resume text below with the PDF’s contents?")) return;
+  $("#pdfStatus").innerHTML = `<span class="spinner"></span>Reading your PDF…`;
+  try {
+    const data = await new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1]); r.onerror = rej; r.readAsDataURL(file); });
+    const {value:r} = await gemini([{inline_data:{mime_type:"application/pdf", data}},
+      {text:`Convert this resume into plain text. Reply with one JSON object: {"contact": {"name": "", "email": "", "phone": "", "location": "", "links": ""}, "body": "..."}. Put contact details only in "contact". In "body", keep every other word of the resume, with clear section headings in capitals (SUMMARY, EXPERIENCE, EDUCATION, AWARDS, SKILLS and so on), one role per block with its dates, and each bullet on its own line starting with "- ". Do not summarise or drop anything.`}], {temperature:0});
+    if (!r || !r.body) throw new Error("UNREADABLE");
+    S.resume.body = r.body;
+    CONTACT.forEach(k => { if (r.contact && r.contact[k] && !S.resume.contact[k]) S.resume.contact[k] = String(r.contact[k]); });
+    save(); renderResume(); renderSetup();
+    $("#pdfStatus").textContent = "Imported. Read it through and fix anything the conversion got wrong.";
+  } catch (err){ $("#pdfStatus").textContent = aiError(err); }
+});
+
+/* ============================================================ settings */
+function renderSettings(){
+  $("#keyInput").value = getKey();
+  $("#birthDate").value = S.settings.birthDate || "";
+  $("#models").value = S.settings.models || "";
+}
+$("#keySave").addEventListener("click", () => { setKey($("#keyInput").value.trim()); $("#keyStatus").textContent = getKey() ? "Saved on this device." : "Key removed."; renderSetup(); });
+$("#keyTest").addEventListener("click", async () => {
+  setKey($("#keyInput").value.trim());
+  $("#keyStatus").innerHTML = `<span class="spinner"></span>Testing…`;
+  try { const {model} = await gemini("Reply with the single word OK.", {json:false, temperature:0}); $("#keyStatus").textContent = `It works (${model}).`; }
+  catch (e){ $("#keyStatus").textContent = aiError(e); }
+  renderSetup();
+});
+$("#birthDate").addEventListener("change", e => { S.settings.birthDate = e.target.value; save(); });
+$("#models").addEventListener("change", e => { S.settings.models = e.target.value.trim(); save(); });
+$("#exportBtn").addEventListener("click", () => download(new Blob([JSON.stringify({app:"job-hunt-desk", version:2, ...S}, null, 1)], {type:"application/json"}), `job-hunt-backup-${today()}.json`));
+$("#importFile").addEventListener("change", async e => {
+  const file = e.target.files[0]; e.target.value = ""; if (!file) return;
+  try {
+    const v = JSON.parse(await file.text());
+    const incomingApps = Array.isArray(v.apps) ? v.apps : Array.isArray(v.jobs) ? v.jobs : Array.isArray(v) ? v : null;
+    if (!incomingApps) throw 0;
+    const byId = new Map(S.apps.map(a => [a.id, a]));
+    incomingApps.forEach(a => { if (a && (a.company || a.role)){ const id = a.id || newId(); byId.set(id, {...a, id}); } });
+    S.apps = [...byId.values()];
+    if (v.resume && v.resume.body && (!S.resume.body || confirm("The backup has a resume too. Replace the one in this browser?"))) S.resume = normalize(v).resume;
+    S.kits = {...(v.kits||{}), ...S.kits};
+    S.hidden = [...new Set([...S.hidden, ...(v.hidden||[])])];
+    S.saved = {...(v.saved||{}), ...S.saved};
+    S.settings = {...(v.settings||{}), ...S.settings};
+    save(); toast(`Loaded ${plural(incomingApps.length,"application")}`); renderApps(); renderJobs(); renderSettings();
+  } catch { toast("That file isn’t a backup from this app."); }
+});
+
+/* ============================================================ start */
+showTab(location.hash.slice(1) || "jobs");
+loadFeed();
+</script>
+</body>
+</html>

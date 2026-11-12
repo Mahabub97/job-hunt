@@ -1,0 +1,9 @@
+{
+  "name": "Job hunt desk",
+  "short_name": "Jobs",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#E9EEF2",
+  "theme_color": "#18293B",
+  "icons": [{"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}
