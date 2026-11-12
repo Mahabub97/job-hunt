@@ -1,1 +1,319 @@
-{"updated_at": null, "last_run": null, "jobs": []}
+{
+ "updated_at": "2026-11-13T01:01+06:00",
+ "last_run": {
+  "at": "2026-11-13T01:01+06:00",
+  "new": 8,
+  "sources": [
+   {
+    "source": "Bangladesh Bank e-recruitment",
+    "status": "Read the page (0 links)"
+   },
+   {
+    "source": "Teletalk all government jobs",
+    "status": "The page has no readable text here (it may need a browser to load)."
+   },
+   {
+    "source": "Bangladesh Bank e-recruitment",
+    "status": "0 new matching notices"
+   },
+   {
+    "source": "Web search",
+    "status": "10 searches, 80 results"
+   },
+   {
+    "source": "Remotive",
+    "status": "14 listings, 0 match your titles and accept Bangladesh"
+   },
+   {
+    "source": "Jobicy",
+    "status": "50 listings, 0 match your titles and accept Bangladesh"
+   },
+   {
+    "source": "AI",
+    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
+   },
+   {
+    "source": "AI",
+    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
+   },
+   {
+    "source": "AI",
+    "status": "gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
+   },
+   {
+    "source": "AI",
+    "status": "gemini-2.5-flash-lite: not available, trying the next model"
+   },
+   {
+    "source": "AI",
+    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
+   },
+   {
+    "source": "AI",
+    "status": "Checked 24 of 72 results with 14 AI calls (gemini-3.1-flash-lite, gemini-3.5-flash-lite, gemini-3.6-flash)"
+   }
+  ]
+ },
+ "jobs": [
+  {
+   "id": "aeb2b1170092",
+   "category": "Private",
+   "title": "Product Manager",
+   "organization": "Optimizely",
+   "location": "Dhaka, BD",
+   "work_type": null,
+   "posted": "2026-11-08",
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://careers.optimizely.com/job/Dhaka-Product-Manager-1212-BD/1360527755",
+   "apply_url": null,
+   "how_to_apply": "Click the apply now button on the career page.",
+   "summary": "Optimizely is seeking a Product Manager to join their Commerce Connect team in Dhaka. The role involves driving product roadmap and execution while collaborating with cross-functional teams.",
+   "requirements": [
+    "Proven track record of delivering successful products",
+    "Excellent communication skills",
+    "Attention to detail",
+    "Ability to work in a fast-paced environment"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "The candidate is a Senior Product Manager with 6 years of experience, which aligns perfectly with the requirements for this role.",
+   "source": "careers.optimizely.com",
+   "jd_text": "By continuing to use and navigate this website, you are agreeing to the use of cookies.\n\n[![Optimizely Careers](//rmkcdn.successfactors.com/3f7ff9d8/339c881b-6485-4bd9-9acb-a.png)](https://careers.optimizely.com/ \"Optimizely Careers\") \n\n* [Life at Optimizely](https://www.optimizely.com/company/career/ \"Life at Optimizely\")\n* [Diversity and Inclusion](https://www.optimizely.com/company/diversity-inclusion \"Diversity and Inclusion\")\n* [Executive Team](https://www.optimizely.com/company/executive-team \"Executive Team\")\n* [Locations](https://www.optimizely.com/company/offices/ \"Locations\")\n* [Sign in](https://career55.sapsf.eu/career?company=episerveri&navBarLevel=MY_PROFILE \"Sign in\")\n\n[![Optimizely Careers](//rmkcdn.successfactors.com/3f7ff9d8/339c881b-6485-4bd9-9acb-a.png)](https://careers.optimizely.com/ \"Optimizely Careers\") \n\n* [Life at Optimizely](https://www.optimizely.com/company/career/ \"Life at Optimizely\")\n* [Diversity and Inclusion](https://www.optimizely.com/company/diversity-inclusion \"Diversity and Inclusion\")\n* [Executive Team](https://www.optimizely.com/company/executive-team \"Executive Team\")\n* [Locations](https://www.optimizely.com/company/offices/ \"Locations\")\n* [Sign in](https://career55.sapsf.eu/career?company=episerveri&navBarLevel=MY_PROFILE \"Sign in\")\n\n[Create Alert](#)\n\n# Product Manager\n\n[Apply now »](/talentcommunity/apply/1360527755/?locale=en_US)\n\n**Date:** Nov 8, 2026\n\n**Location:** Dhaka, BD, 1212 BD\n\n**Company:**  Optimizely\n\nWe're not here to add to the noise. We're here to cut through it- with AI that actually works for marketers.\n\nFrom AI-powered content creation to world-class CMS and the industry's most trusted experimentation platform, Optimizely is the tool modern marketers actually want to use. AI-Ready. Set. Go.\n\n10,000+ brands including H&M, PayPal, and Zoom already get it. So do Gartner, Forrester, and IDC, who consistently recognize us as leaders in MarTech.\n\nBut here's the thing about building great products: it takes great people. Our 1,600+ Optimizers across 12 global offices are curious, collaborative, and refreshingly human. We don't do corporate speak. We do real conversations, big ideas, and genuinely care for the work we make together.\n\nIf you want to be part of a team that's shaping the future of marketing technology — and actually enjoys doing it — you're in the right place.\n\nFind us on Instagram: @optimizely\n\n## Introduction\n\nOptimizely is seeking a highly skilled Senior Product Manager to join our Commerce Connect team. As a Senior Product Manager, you will be an individual contributor who owns one or more significant product areas and excels at SaaS product management.\n\nIn this role, you will be responsible for driving the roadmap and execution for the Commerce Connect product, working closely with cross-functional teams to ensure successful product delivery. You will develop a thorough understanding of the features and technology within your assigned product domain(s) and will be recognized ",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "951e2651fa14",
+   "category": "Private",
+   "title": "Senior Product Manager",
+   "organization": "Optimizely",
+   "location": "Dhaka, Bangladesh",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://startup.jobs/senior-product-manager-optimizely-10735524",
+   "apply_url": null,
+   "how_to_apply": null,
+   "summary": "Optimizely is hiring a technical Senior Product Manager based in Dhaka, Bangladesh. The role involves building and shipping AI agents.",
+   "requirements": [
+    "Hands-on, technical Product Manager role",
+    "Build and ship AI agents"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "Directly matches the candidate's target role of Senior Product Manager in Dhaka, Bangladesh.",
+   "source": "startup.jobs",
+   "jd_text": "Senior Product Manager job at Optimizely in Dhaka, Bangladesh. ––– Introduction This is a hands-on, technical Product Manager role. Build and ship AI agents",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "ba25953047da",
+   "category": "Private",
+   "title": "Senior Product Manager",
+   "organization": "Arogga",
+   "location": "Dhaka, Bangladesh",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": "BDT 80,000 – 100,000 (Negotiable based on experience and",
+   "experience": "6+ Years",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.facebook.com/Aroggacareer/posts/hiring-senior-product-managerarogga-is-looking-for-a-proactive-execution-oriente/989724614209255",
+   "apply_url": null,
+   "how_to_apply": null,
+   "summary": "Arogga is seeking a full-time Senior Product Manager for software development in Dhaka. The role requires at least 6 years of experience.",
+   "requirements": [
+    "6+ Years experience"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "Perfectly aligns with the candidate's 6 years of product management experience and target role in Dhaka.",
+   "source": "facebook.com",
+   "jd_text": "Hiring Product Manager (Software Development)! Employment Type: Full-time Experience: 6+ Years Salary: BDT 80,000 – 100,000 (Negotiable based on experience and",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "6b6bd5e20471",
+   "category": "Abroad",
+   "title": "Senior Product Manager, Product Systems",
+   "organization": "Agoda",
+   "location": "Bangkok, Thailand",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://careersatagoda.com/job/8358225-senior-product-manager-product-systems",
+   "apply_url": null,
+   "how_to_apply": null,
+   "summary": "Agoda is seeking a Senior Product Manager for Product Systems within Rocket Travel in Bangkok, Thailand. The role focuses on powering white-label travel solutions for major airlines, banks, and loyalty programs.",
+   "requirements": [],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "Exceptional fit due to the candidate's 6-year travel-tech product experience and interest in abroad roles in Thailand.",
+   "source": "careersatagoda.com",
+   "jd_text": "![Careers at Agoda](https://careersatagoda.com/wp-content/uploads/2025/09/Agoda-career-logo-header-full-white.png)\n![Logo](https://careersatagoda.com/wp-content/uploads/2025/09/Agoda-career-logo-header.png)\n\n[Careers at Agoda](https://careersatagoda.com/)\n\nBegin Your Journey with Agoda\n\n## 343 Jobs Available in 44 Locations\n\nCountry or Remote\n\nCountry or Remote\n\nAustralia\n\nBrazil\n\nCambodia\n\nCanada\n\nChina\n\nEgypt\n\nGermany\n\nHong Kong\n\nHungary\n\nIndia\n\nIndonesia\n\nIsrael\n\nJapan\n\nLaos\n\nMalaysia\n\nMaldives\n\nMexico\n\nMyanmar\n\nNepal\n\nPhilippines\n\nSaudi Arabia\n\nSingapore\n\nSouth Africa\n\nSouth Korea\n\nSpain\n\nSri Lanka\n\nTaiwan\n\nThailand\n\nTurkey\n\nUnited Arab Emirates\n\nUnited Kingdom\n\nUnited States\n\nVietnam\n\nRemote\n\n### Senior Product Manager, Product Systems\n\n![Share](https://careersatagoda.com/wp-content/uploads/2025/04/share.svg)\n\n![Location](https://careersatagoda.com/wp-content/uploads/2025/04/pin-icon.svg)\nBangkok, Thailand\n\n![Location](https://careersatagoda.com/wp-content/uploads/2025/04/pin-icon.svg)\n\n![Department](https://careersatagoda.com/wp-content/uploads/2025/04/user-icon.svg)\nRocket Travel - Product\n\n![Department](https://careersatagoda.com/wp-content/uploads/2025/04/user-icon.svg)\n\n**About Agoda**\n\nAt Agoda, we bridge the world through travel. Our story began in 2005, when two lifelong friends and entrepreneurs, driven by their passion for travel, launched Agoda to make it easier for everyone to explore the world.\n\nToday, we are part of Booking Holdings [NASDAQ: BKNG], with a diverse team of over 7,000 people from 90 countries, working together in offices around the globe. Every day, we connect people to destinations and experiences, with our great deals across our millions of hotels and holiday properties, flights, and experiences worldwide.\n\nNo two days are the same at Agoda. Data and technology are at the heart of our culture, fueling our curiosity and innovation. If you’re ready to begin your best journey and help build travel for the world, join us.\n\n## Senior Product Manager, Product Systems\n\n## About Rocket Travel by Agoda\n\nRocket Travel by Agoda is the B2B arm of Booking Holdings (NASDAQ: BKNG), the world’s leading provider of online travel and the parent of Booking.com, Agoda, KAYAK and OpenTable. We power the travel experiences behind some of the world’s biggest airlines, banks and loyalty programs. We were founded in 2012 under our flagship consumer facing product, [rocketmiles.com](http://rocketmiles.com/). Since then, we have evolved to partner with some of the largest consumer travel brands in the world creating white-label solutions that allow customers to earn and redeem miles and points for booking hotels, rental cars, flights and activities. Our global partnerships range from world-class airlines to international banks to large-scale shopping platforms. We help our partners develop successful [go-to-market strategies](https://www.rockettravel.com/blog-articles/go-to-market-strategy) through [marketing expertise](https://www.rocket",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "33bb8b90ecea",
+   "category": "Bank",
+   "title": "Senior Officer",
+   "organization": "Bankers' Selection Committee Secretariat (BSCS)",
+   "location": "Bangladesh",
+   "work_type": "On-site",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.facebook.com/groups/662327822566049/posts/1786366330162187",
+   "apply_url": null,
+   "how_to_apply": "Apply via the provided link in the circular.",
+   "summary": "The role is for a Senior Officer position under the Bankers' Selection Committee Secretariat. It is a standard banking recruitment role suitable for an MBA graduate.",
+   "requirements": [
+    "MBA graduate"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "The candidate has an MBA in Finance & Banking and is looking for officer-level bank roles in Bangladesh.",
+   "source": "facebook.com",
+   "jd_text": "ব্যাংক জব প্রত্যাশীদের জন্য ON GOING CIRCULAR. 1. Senior Officer Under: Bankers' Selection Committee Secretariat (BSCS) Apply Link: ...Read more",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "85b537ce5407",
+   "category": "Private",
+   "title": "Product Manager-R&D",
+   "organization": "Ismartu Technology Bd Ltd (ITBL)",
+   "location": "Bangladesh",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://jobs.bdjobs.com/jobdetails?id=1553736&fcatId=0&ln=1",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the provided Bdjobs link.",
+   "summary": "This is a Product Manager role focused on research and development at Ismartu Technology in Bangladesh. The position involves analyzing local user behavior and shaping product strategies.",
+   "requirements": [
+    "Experience analyzing user behavior",
+    "Ability to transform insights into product strategies"
+   ],
+   "documents": [],
+   "fit": 4,
+   "fit_reason": "Matches the candidate's exact product management experience in Bangladesh, though seniority is not explicitly stated.",
+   "source": "jobs.bdjobs.com",
+   "jd_text": "The role involves analyzing local user behavior, identifying key opportunities, and transforming insights into actionable product strategies.",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "7d378e3cc45b",
+   "category": "Bank",
+   "title": "Product Management, IT Division",
+   "organization": "City Bank",
+   "location": "Bangladesh",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://thecvguy.net/bank-jobs/city-bank-product-management-it-division-2026",
+   "apply_url": null,
+   "how_to_apply": "Visit the application link to review details and apply.",
+   "summary": "City Bank is hiring for a product management role within its Information Technology Division in Bangladesh. The position bridges business objectives, customer needs, and technical execution.",
+   "requirements": [
+    "Background in product management or IT division roles"
+   ],
+   "documents": [],
+   "fit": 4,
+   "fit_reason": "Aligns with the candidate's experience in product management and interest in banking sector roles.",
+   "source": "thecvguy.net",
+   "jd_text": "2 days ago — City Bank is hiring for Product Management in its Information Technology Division, a role that bridges business objectives, customer needs and technical ...Read more",
+   "found_on": "2026-11-13",
+   "ai": true
+  },
+  {
+   "id": "36873546300e",
+   "category": "Abroad",
+   "title": "Product Manager, SME Business Banking",
+   "organization": "Ping An Digital Bank (International) Limited",
+   "location": "Ngau Tau Kok, Kwun Tong District, Hong Kong",
+   "work_type": "Full time",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://hk.jobsdb.com/virtual-banking-jobs",
+   "apply_url": null,
+   "how_to_apply": "Apply through the Jobsdb portal link.",
+   "summary": "This is a full-time Product Manager role focusing on SME business banking at Ping An Digital Bank in Hong Kong. The position involves managing digital banking product initiatives.",
+   "requirements": [
+    "Experience in product management",
+    "Knowledge of SME business banking"
+   ],
+   "documents": [],
+   "fit": 3,
+   "fit_reason": "Matches the abroad target location type and product manager profile, though Hong Kong was not explicitly in the primary list of countries.",
+   "source": "hk.jobsdb.com",
+   "jd_text": "5 days ago — Product Manager, SME Business Banking. at Ping An Digital Bank (International) Limited. This is a Full time job. Ngau Tau Kok, Kwun Tong District. Digital Bank.Read more",
+   "found_on": "2026-11-13",
+   "ai": true
+  }
+ ]
+}
