@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-13T01:01+06:00",
+ "updated_at": "2026-11-14T12:33+06:00",
  "last_run": {
-  "at": "2026-11-13T01:01+06:00",
-  "new": 8,
+  "at": "2026-11-14T12:33+06:00",
+  "new": 1,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -22,7 +22,7 @@
    },
    {
     "source": "Remotive",
-    "status": "14 listings, 0 match your titles and accept Bangladesh"
+    "status": "16 listings, 0 match your titles and accept Bangladesh"
    },
    {
     "source": "Jobicy",
@@ -30,31 +30,45 @@
    },
    {
     "source": "AI",
-    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
-   },
-   {
-    "source": "AI",
-    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
-   },
-   {
-    "source": "AI",
-    "status": "gemini-3.1-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
-   },
-   {
-    "source": "AI",
-    "status": "gemini-2.5-flash-lite: not available, trying the next model"
-   },
-   {
-    "source": "AI",
-    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
-   },
-   {
-    "source": "AI",
-    "status": "Checked 24 of 72 results with 14 AI calls (gemini-3.1-flash-lite, gemini-3.5-flash-lite, gemini-3.6-flash)"
+    "status": "Checked 65 of 65 results with 12 AI calls (gemini-3.5-flash-lite)"
    }
   ]
  },
  "jobs": [
+  {
+   "id": "7f64c8862dff",
+   "category": "Bank",
+   "title": "Junior Officer - Senior Officer (NCC Islamic Banking)",
+   "organization": "NCC Bank PLC",
+   "location": "Anywhere in Bangladesh",
+   "work_type": "On-site",
+   "posted": "2026-11-09",
+   "application_start": null,
+   "deadline": "2026-11-18",
+   "vacancies": null,
+   "salary": null,
+   "experience": "At least 2 years",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.youtube.com/watch?v=RUNAKQEhcjU",
+   "apply_url": "https://nccbank.com.bd/career",
+   "how_to_apply": "Apply online through the official NCC Bank career portal.",
+   "summary": "NCC Bank PLC is hiring Junior to Senior Officers for its Islamic Banking Division to work in investment, general banking, and head office support functions. The role requires relevant banking experience and an appropriate postgraduate or four-year bachelor's degree.",
+   "requirements": [
+    "Postgraduate or four-year bachelor's degree from a UGC approved university",
+    "At least 2 years of experience in relevant banking work",
+    "Knowledge of Islamic banking operations is preferred"
+   ],
+   "documents": [],
+   "fit": 4,
+   "fit_reason": "This is a bank officer role requiring experience and an MBA/Masters, matching the user's background in finance and banking.",
+   "source": "youtube.com",
+   "jd_text": "# NCC Islamic Banking Job Circular 2026 | Junior Officer | Apply Online |\n## Channel: Jobs & Career\n31.2K subscribers\nN/A likes\n\n### Description\n293 views\nPosted: 2026-11-09\nNCC Islamic Banking Job Circular 2026 |Junior Officer| Apply Online |\n\nNCC Bank PLC Job Circular 2026 | Junior Officer – Senior Officer Recruitment\n\nNCC Bank PLC has published a new recruitment circular for the posts of Junior Officer to Senior Officer. The bank has an opportunity to work in the Investment, General Banking and Head Office Support Function of the Islamic Banking Division.\n\nPostgraduate or four-year bachelor's degree holders from a UGC approved university in Bangladesh can apply for this recruitment. At least 2 years of experience in relevant banking work is required.\n\nImportant information about the recruitment circular:\nOrganization: NCC Bank PLC\nPosition: Junior Officer – Senior Officer\nDepartment: NCC Islamic Banking\nExperience: At least 2 years\nEducational Qualification: MBA/MBM/Masters or four-year Bachelor's Degree\nPlace of work: Anywhere in Bangladesh\nApplication Deadline: 18 November 2026\nApplication Website: https://nccbank.com.bd/career\n\n*You can learn in this video:*\n1. Which posts will be recruited\n2. Educational Qualification and Experience Requirements\n3. Who can apply\n4. Responsibilities of Investment and General Banking\n5. Head Office Support Function\n6. Application Rules\n7. Recruitment Exam Details\n#NCCBank #NCCBankJob #NCCBankCircular2026 #IslamicBanking #BankJob2026 #BankJobsBangladesh #PrivateBankJob #JuniorOfficer #SeniorOfficer #Jobs&Career\n\n### Transcript\n[0:00] প্রিয় বন্ধুরা আসসালামু আলাইকুম কেমন আছেন সবাই আশা করি অনেক ভালো আছেন স্বাগত জানাচ্ছি আমার ইউটিউব চ্যানেল জব এন্ড\n[0:08] বন্ধুরা নতুন একটি ব্যাংক জবের খবর নিয়ে হাজির হয়েছি আজকের এই ভিডিওতে আমি এনপিসি ব্যাংক\n[0:15] পিএসসি 14 প্রকাশিত হওয়া বেশ কয়েকটি পদের নিয়োগ বিজ্ঞপ্তি নিয়ে আলোচনা করব তবে মেইনলি দুইটা পদের\n[0:24] বিজ্ঞপ্তি নিয়ে আলোচনা করব একটি হল ইসলামিক ব্যাংকিং জুনিয়র অফিসার সিনিয়র অফিসার আরেকটি হচ্ছে তাদের অফিসার\n[0:34] আর আরো অনেক বিজ্ঞপ্তি আছে আপনারা চাইলে তাদের এই পোর্টালে এসে দেখে নিতে পারেন আজকে অনেক পদের বিস্তারিত পদের লাস্ট ডেট\n[0:44] আছে আবেদন করার যেগুলো টেকনিক্যাল রিলেটেড এবং অভিজ্ঞতার প্রয়োজন আছে।\n[0:51] তো যারা আগ্রহী আছেন কুরিয়ার করতে তারা এখানে এসে দেখে নিতে পারেন। তো আমরা এখন\n[0:59] এই দুটি বিজ্ঞপ্তি বিস্তারিত দেখবো। আশা করি ভিডিওর শেষ পর্যন্ত সাথে থাকবেন।\n[1:05] বন্ধুরা এনসি ব্যাংক তার ইসলামিক ব্যাংকিং এর জন্য মূলত এই বিজ্ঞপ্তিটি দিয়ে বলেছে\n[1:12] যে তাদের ইসলামিক ব্যাংকিং পরিচালনা করার জন্য তার মানে ইসলামী ব্যাংকিং উইন্ডো\n[1:18] পরিচালনার জন্য তারা পৌডমিন্যাতিটিক কিছু কর্মী হচ্ছে লোক করছে যারা এই ইসলামী\n[1:28] ব্যাংকিং এর জন্য উপযুক্ত প্রফেসর পদের নাম দিয়েছে জুনিয়র অফিসার সিনিয়র অফিসার\n[1:36] এখানে কিছু কি কাজ আছে এবং যোগ্যতা কি চেয়েছে আমরা এটি দেখার চেষ্টা করব।\n[1:42] বন্ধুরা বিজ্ঞপ্তিতে মূলত তিনটি কাজের ক্ষেত্রে উল্লেখ করা হয়েছে। একটি হল ইনভেস্টমেন্ট বা বিনিয়োগ বিভাগ।\n[1:52] অন্যটি হলো জেনারেল ব্যাংকিং বা সাধারণ ব্যাংকিং বিভাগ এবং তৃতীয় হচ্ছে হেড অ",
+   "found_on": "2026-11-14",
+   "ai": true
+  },
   {
    "id": "aeb2b1170092",
    "category": "Private",
