@@ -1,8 +1,8 @@
 {
  "updated_at": "2026-11-14T12:33+06:00",
  "last_run": {
-  "at": "2026-11-14T12:33+06:00",
-  "new": 1,
+  "at": "2026-11-15T12:41+06:00",
+  "new": 0,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -18,7 +18,7 @@
    },
    {
     "source": "Web search",
-    "status": "10 searches, 80 results"
+    "status": "10 searches, 76 results"
    },
    {
     "source": "Remotive",
@@ -30,7 +30,7 @@
    },
    {
     "source": "AI",
-    "status": "Checked 65 of 65 results with 12 AI calls (gemini-3.5-flash-lite)"
+    "status": "Checked 37 of 37 results with 9 AI calls (gemini-3.5-flash-lite)"
    }
   ]
  },
