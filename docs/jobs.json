@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-14T12:33+06:00",
+ "updated_at": "2026-11-16T12:39+06:00",
  "last_run": {
-  "at": "2026-11-15T12:41+06:00",
-  "new": 0,
+  "at": "2026-11-16T12:39+06:00",
+  "new": 1,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -18,7 +18,7 @@
    },
    {
     "source": "Web search",
-    "status": "10 searches, 76 results"
+    "status": "10 searches, 80 results"
    },
    {
     "source": "Remotive",
@@ -26,15 +26,52 @@
    },
    {
     "source": "Jobicy",
-    "status": "50 listings, 0 match your titles and accept Bangladesh"
+    "status": "50 listings, 1 match your titles and accept Bangladesh"
    },
    {
     "source": "AI",
-    "status": "Checked 37 of 37 results with 9 AI calls (gemini-3.5-flash-lite)"
+    "status": "Checked 19 of 19 results with 5 AI calls (gemini-3.5-flash-lite)"
    }
   ]
  },
  "jobs": [
+  {
+   "id": "7e00c2071bf3",
+   "category": "Remote",
+   "title": "Lead Product Manager, Digital Assets",
+   "organization": "CertiK",
+   "location": "Remote",
+   "work_type": "Remote",
+   "posted": "2026-11-16",
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "5-8 years in B2B product management, ideally in fintech, regtech, compliance software or at a regulated financial institution",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://jobicy.com/jobs/155441-lead-product-manager-digital-assets",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the Jobicy posting.",
+   "summary": "CertiK is hiring a Lead Product Manager for Digital Assets to build regulatory technology for banks, regulators, and regulated financial institutions. You will run client discovery, define the product roadmap, and work closely with engineering and business development.",
+   "requirements": [
+    "5-8 years in B2B product management in fintech, regtech, compliance software or regulated financial institutions",
+    "Domain experience in financial crime, AML, transaction monitoring, blockchain intelligence, or risk/surveillance products",
+    "Led complete product cycles from discovery to launch in a regulated or enterprise domain",
+    "Native or fully proficient English with professional presentation skills",
+    "Established prioritization framework and record of turning customer input into shipped features",
+    "Technical fluency to challenge engineering decisions"
+   ],
+   "documents": [],
+   "fit": 4,
+   "fit_reason": "This is a remote Lead Product Manager role in digital assets/fintech open to APAC candidates including Bangladesh, closely matching the user's senior product management background.",
+   "source": "Jobicy",
+   "jd_text": "Job title: Lead Product Manager, Digital Assets\nCompany: CertiK\nWho can apply: APAC\nSalary: not stated\nPosted: 2026-11-16\n\nAbout the Company\nBorn from groundbreaking research at Columbia University and Yale University, CertiK is a leading Web3 security company focused on securing blockchain protocols, smart contracts, and decentralized applications through cutting-edge security research, formal verification, and AI-powered technology. Founded in 2017 and headquartered in New York City, CertiK provides end-to-end security solutions including smart contract audits, penetration testing, on-chain monitoring, incident response, and compliance services for some of the largest projects in the digital asset ecosystem.\nToday, CertiK supports thousands of enterprise clients and Web3 projects globally, with a distributed international team spanning North America, Asia, and Europe. The company is backed by leading investors including Coatue, Goldman Sachs, Insight Partners, and Sequoia Capital, and has been recognized by organizations such as the World Economic Forum and CB Insights for its contributions to blockchain security innovation.\nAbout the role\nCertiK works with banks, regulators and regulated financial institutions that adopt digital assets. We build regulatory technology for these markets, and we are hiring a lead product manager to own what we build next for these clients.\nYou will gather client needs directly and through our client-facing consultants, turn them into a clear, prioritized roadmap, and present our products to clients, prospects and regulators in North America and, when needed, abroad. Inside the company, you represent the customer.\nWhat you'll do\nRun discovery with clients and prospects, on site and remotely, and work closely with the solutions consultants to set the agenda for what they learn in the field\nBuild and run a discovery channel of your own: a panel of compliance, risk and operations practitioners at banks, VASPs and regulators for structured (including paid) interviews, so requirements never depend on a single client\nConvert client conversations and consultant findings into actionable, prioritized product and feature decisions, with the reason behind each request documented, and defend the ranking to leadership\nPresent CertiK's products and services to client teams, prospects and regulators in demos, workshops and tender presentations\nJoin Business Development and consultants on key client visits, primarily in the US, with occasional travel to Europe, the Middle East and other markets\nOwn the roadmap conversation with the CEO, Business Development and Engineering\nRequirements\n5–8 years in B2B product management, ideally in fintech, regtech, compliance software or at a regulated financial institution\nDomain experience in financial crime, AML or transaction monitoring, blockchain intelligence, or risk and surveillance products, whether as a product manager or from inside a compliance function\nHas led complete product cycl",
+   "found_on": "2026-11-16",
+   "ai": true
+  },
   {
    "id": "7f64c8862dff",
    "category": "Bank",
