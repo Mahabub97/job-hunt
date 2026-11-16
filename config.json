@@ -1,50 +1,224 @@
 {
-  "target_titles": ["Product Manager", "Senior Product Manager"],
-  "exclude_title_words": ["associate product", "junior", "intern", "project manager", "product owner", "product marketing"],
-
+  "target_titles": [
+    "Product Manager",
+    "Senior Product Manager",
+    "Product Owner",
+    "Product Marketing",
+    "Product Development",
+    "Product Lead"
+  ],
+  "exclude_title_words": [
+    "associate product",
+    "junior",
+    "intern",
+    "project manager"
+  ],
   "targets": {
-    "Private": "Product Manager or Senior Product Manager roles in Bangladesh. Close variants such as 'Product Manager, Payments' or 'Sr. Product Manager' count. Associate/Junior PM, Project Manager, Product Owner-only and Product Marketing roles do not.",
+    "Private": "Product Manager, Senior Product Manager, Product Owner, Product Marketing Manager, Product Development Manager or Senior Manager, or Product Lead roles in Bangladesh. Close variants such as 'Product Manager, Payments' or 'Sr. Product Manager' count. Associate/Junior/Intern roles and Project Manager roles do not.",
     "Bank": "Bank and financial-institution jobs in Bangladesh, private or state-owned, including Bangladesh Bank and Bankers' Selection Committee circulars: product, digital banking or business roles at manager level, and officer-level recruitment open to MBA graduates (for example Assistant Director, Senior Officer, Officer (General)).",
     "Government": "Government, semi-government and public-sector jobs in Bangladesh open to BBA/MBA graduates at 9th grade or a similar level (for example Assistant Director, Senior Officer, Programme Officer, Assistant Manager), including BCS.",
-    "Remote": "Remote Product Manager or Senior Product Manager roles that accept candidates living in Bangladesh.",
-    "Abroad": "Product Manager or Senior Product Manager roles in Singapore, Malaysia, Thailand, the UAE or nearby countries that hire people from abroad."
+    "Remote": "Remote Product Manager, Senior Product Manager, Product Owner, Product Marketing Manager, Product Development Manager or Senior Manager, or Product Lead roles that accept candidates living in Bangladesh.",
+    "Abroad": "On-site or hybrid Product Manager, Senior Product Manager, Product Owner, Product Marketing Manager, Product Development Manager or Senior Manager, or Product Lead roles abroad that hire foreign nationals or offer visa sponsorship or relocation: especially the UAE, Saudi Arabia, Qatar, Singapore, Malaysia, Thailand, Indonesia, Vietnam, Japan, Germany, the Netherlands and Ireland."
   },
-
   "web_search": {
-    "max_queries_per_run": 10,
-    "results_per_query": 8,
+    "max_queries_per_run": 29,
+    "results_per_query": 6,
     "time_range": "week",
     "queries": [
-      {"q": "Product Manager job Dhaka Bangladesh", "category": "Private"},
-      {"q": "Senior Product Manager job Bangladesh", "category": "Private"},
-      {"q": "Product Manager job", "category": "Private", "include_domains": ["bdjobs.com"]},
-      {"q": "digital banking product manager job Bangladesh bank", "category": "Bank"},
-      {"q": "Bankers Selection Committee circular Senior Officer Officer General", "category": "Bank"},
-      {"q": "Bangladesh Bank Assistant Director recruitment circular", "category": "Bank"},
-      {"q": "bank job circular Bangladesh MBA officer apply online", "category": "Bank"},
-      {"q": "government job circular teletalk Assistant Director", "category": "Government"},
-      {"q": "BPSC BCS circular application", "category": "Government"},
-      {"q": "Product Manager job Singapore Kuala Lumpur Bangkok Dubai visa sponsorship", "category": "Abroad"}
+      {
+        "q": "Product Manager job Dhaka Bangladesh",
+        "category": "Private"
+      },
+      {
+        "q": "Senior Product Manager job Bangladesh",
+        "category": "Private"
+      },
+      {
+        "q": "Product Manager",
+        "category": "Private",
+        "include_domains": [
+          "bdjobs.com"
+        ]
+      },
+      {
+        "q": "Senior Product Manager",
+        "category": "Private",
+        "include_domains": [
+          "bdjobs.com"
+        ]
+      },
+      {
+        "q": "Product Manager job Dhaka Bangladesh",
+        "category": "Private",
+        "include_domains": [
+          "linkedin.com"
+        ]
+      },
+      {
+        "q": "Senior Product Manager Bangladesh",
+        "category": "Private",
+        "include_domains": [
+          "linkedin.com"
+        ]
+      },
+      {
+        "q": "Product Manager job career",
+        "category": "Private",
+        "include_domains": [
+          "bkash.com",
+          "nagad.com.bd",
+          "pathao.com",
+          "shopup.org",
+          "chaldal.com",
+          "sheba.xyz"
+        ]
+      },
+      {
+        "q": "Product Manager job career",
+        "category": "Private",
+        "include_domains": [
+          "grameenphone.com",
+          "robi.com.bd",
+          "banglalink.net",
+          "daraz.com.bd"
+        ]
+      },
+      {
+        "q": "Product Manager job Dhaka",
+        "category": "Private",
+        "include_domains": [
+          "skill.jobs",
+          "glassdoor.com",
+          "wellfound.com"
+        ]
+      },
+      {
+        "q": "Product Owner OR Product Development Manager job Dhaka Bangladesh",
+        "category": "Private"
+      },
+      {
+        "q": "Product Marketing Manager job Dhaka Bangladesh",
+        "category": "Private"
+      },
+      {
+        "q": "digital banking product manager job Bangladesh",
+        "category": "Bank"
+      },
+      {
+        "q": "Bankers Selection Committee circular Senior Officer Officer General",
+        "category": "Bank"
+      },
+      {
+        "q": "Bangladesh Bank Assistant Director recruitment circular",
+        "category": "Bank"
+      },
+      {
+        "q": "bank job circular Bangladesh MBA officer apply online",
+        "category": "Bank"
+      },
+      {
+        "q": "job circular career manager officer",
+        "category": "Bank",
+        "include_domains": [
+          "bracbank.com",
+          "thecitybank.com",
+          "ebl.com.bd",
+          "dutchbanglabank.com",
+          "primebank.com.bd",
+          "mtb.com.bd"
+        ]
+      },
+      {
+        "q": "Standard Chartered HSBC Citi Bangladesh job manager officer",
+        "category": "Bank"
+      },
+      {
+        "q": "UCB Bank Asia Pubali Southeast Dhaka Bank Trust Bank job circular",
+        "category": "Bank"
+      },
+      {
+        "q": "Islami Bank Bangladesh NCC Bank Jamuna Bank Mercantile Bank job circular",
+        "category": "Bank"
+      },
+      {
+        "q": "Sonali Bank Janata Bank Agrani Bank Rupali Bank recruitment circular",
+        "category": "Bank"
+      },
+      {
+        "q": "bank job circular",
+        "category": "Bank",
+        "include_domains": [
+          "bdjobs.com"
+        ]
+      },
+      {
+        "q": "government job circular teletalk Assistant Director",
+        "category": "Government"
+      },
+      {
+        "q": "BPSC BCS circular application",
+        "category": "Government"
+      },
+      {
+        "q": "সরকারি চাকরির বিজ্ঞপ্তি সহকারী পরিচালক",
+        "category": "Government"
+      },
+      {
+        "q": "autonomous organization job circular Bangladesh Assistant Manager MBA",
+        "category": "Government"
+      },
+      {
+        "q": "Product Manager job visa sponsorship Dubai Abu Dhabi Riyadh Doha",
+        "category": "Abroad"
+      },
+      {
+        "q": "Product Manager job visa sponsorship Singapore Kuala Lumpur Bangkok Jakarta Ho Chi Minh City",
+        "category": "Abroad"
+      },
+      {
+        "q": "Product Manager job relocation visa sponsorship Tokyo Berlin Amsterdam Dublin",
+        "category": "Abroad"
+      },
+      {
+        "q": "Product Manager visa sponsorship relocation",
+        "category": "Abroad",
+        "include_domains": [
+          "linkedin.com"
+        ]
+      }
     ]
   },
-
   "free_feeds": [
-    {"name": "Remotive", "type": "remotive", "search": "product manager"},
-    {"name": "Jobicy", "type": "jobicy", "tag": "product manager"}
+    {
+      "name": "Remotive",
+      "type": "remotive",
+      "search": "product manager"
+    },
+    {
+      "name": "Jobicy",
+      "type": "jobicy",
+      "tag": "product manager"
+    }
   ],
-
   "official_pages": [
-    {"name": "Bangladesh Bank e-recruitment", "url": "https://erecruitment.bb.org.bd/onlineapp/joblist.php", "category": "Bank"},
-    {"name": "Teletalk all government jobs", "url": "https://alljobs.teletalk.com.bd/", "category": "Government"}
+    {
+      "name": "Bangladesh Bank e-recruitment",
+      "url": "https://erecruitment.bb.org.bd/onlineapp/joblist.php",
+      "category": "Bank"
+    }
   ],
-
   "ai": {
-    "models": ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-2.5-flash-lite", "gemini-3.6-flash", "gemini-2.5-flash"],
+    "models": [
+      "gemini-3.5-flash-lite",
+      "gemini-3.1-flash-lite",
+      "gemini-2.5-flash-lite",
+      "gemini-3.6-flash",
+      "gemini-2.5-flash"
+    ],
     "batch_size": 6,
-    "max_calls_per_run": 14,
+    "max_calls_per_run": 20,
     "pause_seconds": 6
   },
-
   "keep_jobs_for_days": 45,
   "profile": "Product manager in Bangladesh. Put your real background in the CANDIDATE_PROFILE secret so it stays private."
 }
