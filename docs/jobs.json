@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-19T13:32+06:00",
+ "updated_at": "2026-11-20T13:24+06:00",
  "last_run": {
-  "at": "2026-11-19T13:32+06:00",
-  "new": 11,
+  "at": "2026-11-20T13:24+06:00",
+  "new": 3,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -14,11 +14,11 @@
    },
    {
     "source": "Web search",
-    "status": "29 searches, 164 results"
+    "status": "29 searches, 163 results"
    },
    {
     "source": "Remotive",
-    "status": "16 listings, 0 match your titles and accept Bangladesh"
+    "status": "15 listings, 0 match your titles and accept Bangladesh"
    },
    {
     "source": "Jobicy",
@@ -26,7 +26,7 @@
    },
    {
     "source": "AI",
-    "status": "Checked 45 of 45 results with 9 AI calls (gemini-3.5-flash-lite)"
+    "status": "Checked 61 of 61 results with 12 AI calls (gemini-3.5-flash-lite)"
    },
    {
     "source": "Alerts",
@@ -35,6 +35,111 @@
   ]
  },
  "jobs": [
+  {
+   "id": "b86a2fcfd9b2",
+   "category": "Abroad",
+   "title": "Senior Product Manager (Digital Lodging)",
+   "organization": "Everforth Apex",
+   "location": "Orlando, Florida",
+   "work_type": "Hybrid",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "Minimum of 5 years of related product management experience",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.apexsystems.com/job/3059832_usa/senior-product-manager-digital-lodging",
+   "apply_url": "https://itcareersapply.apexsystems.com/application?id=xRdBOUiJqxI%3d",
+   "how_to_apply": "Apply online through the provided application link.",
+   "summary": "This role involves leading the delivery of initiatives that modernize consumer booking experiences within the digital lodging product team. The professional will drive the full product development lifecycle from ideation through launch and iteration.",
+   "requirements": [
+    "Bachelor's degree in a relevant field of study or equivalent professional work experience",
+    "Minimum of 5 years of related product management experience",
+    "Proficiency in Agile methodologies",
+    "Experience utilizing Jira, Confluence, and Smartsheet",
+    "Strong data and analytics skills including Tableau or SQL"
+   ],
+   "documents": [],
+   "fit": 3,
+   "fit_reason": "Matches the candidate's senior product management experience and background in booking verticals, but is located in the US without explicit visa sponsorship details mentioned in the text.",
+   "source": "apexsystems.com",
+   "jd_text": "## Job Description\n\n# Senior Product Manager (Digital Lodging)\n\n[Apply](https://itcareersapply.apexsystems.com/application?id=xRdBOUiJqxI%3d)\n\n**Job#: 3059832**\n\n**Job Description:**\n\nSenior Product Manager (Digital Lodging)\n\n**Location:** Orlando, Florida (Hybrid)\n\nRole Overview\n\nA Senior Product Manager is required to join the Digital Lodging product team and lead the delivery of initiatives that modernize consumer booking experiences. This role involves driving the full product development lifecycle, from ideation through launch and iteration, for defined digital features. The professional will collaborate with engineering, UX, marketing, and business partners to align development with the overarching product vision.\n\nKey Responsibilities\n\n* Drive defined portions of the product development lifecycle from concept to deployment.\n* Develop and maintain product roadmaps, feature requirements, user stories, and backlog inputs.\n* Collaborate with engineering, UX, design, and business teams to ensure cross-functional alignment.\n* Execute solution definition, validation, and testing for small to medium product areas.\n* Partner with engineering to address integration challenges, software enhancements, and technical architecture.\n* Apply industry trends and emerging technology insights to enhance user satisfaction and drive product innovation.\n* Create and deliver clear, structured presentations to communicate product strategy to diverse audiences.\n\nRequired Qualifications\n\n**Education:** Bachelor’s degree in a relevant field of study or equivalent professional work experience.\n\n**Experience:** Minimum of 5 years of related product management experience, with a proven track record of managing product features from concept through launch.\n\n**Technical Skills:** Proficiency in Agile methodologies and advanced experience utilizing Jira, Confluence, and Smartsheet for backlog management and collaboration. Strong data and analytics skills, including experience utilizing platforms such as Tableau, SQL, or digital analytics tools to identify trends and inform product decisions.\n\nPreferred Qualifications\n\n* Experience within the hospitality industry or with hotel and lodging technologies.\n* Familiarity with the SAFe (Scaled Agile Framework) methodology.\n* Proficiency with Keynote or similar executive presentation tools.\n\n  \n\n*Everforth Apex is a world-class IT services company that serves thousands of clients across the globe. When you join Everforth Apex, you become part of a team that values innovation, collaboration, and continuous learning. We offer quality career resources, training, certifications, development opportunities, and a comprehensive benefits package. Our commitment to excellence is reflected in many awards, including ClearlyRateds Best of Staffing® in Talent Satisfaction in the United States and Great Place to Work® in the United Kingdom and Mexico.*\n\n*Everforth Apex uses a virtual recruiter as part of the application process. Click  [here](h",
+   "found_on": "2026-11-20",
+   "ai": true
+  },
+  {
+   "id": "1766e98383bf",
+   "category": "Abroad",
+   "title": "Senior Principal Product Manager - Recommendation & Lifestyle Intelligence",
+   "organization": "Zalando",
+   "location": "Zurich, Switzerland / Berlin, Germany",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://jobs.zalando.com/en/jobs/2726502-Senior-Principal-Product-Manager---Recommendation-",
+   "apply_url": "https://jobs.zalando.com/en/jobs/2726502-Senior-Principal-Product-Manager---Recommendation-",
+   "how_to_apply": "Submit an online application through the Zalando careers portal by filling out the application form.",
+   "summary": "This is a senior product management role focused on recommendation and lifestyle intelligence products at Zalando. The position is based in Switzerland or Germany.",
+   "requirements": [],
+   "documents": [
+    "Résume",
+    "Cover Letter"
+   ],
+   "fit": 2,
+   "fit_reason": "The role is senior product management in Europe, but the seniority level (Principal) and lack of explicit sponsorship details make it a lower fit compared to standard Senior Product Manager roles.",
+   "source": "jobs.zalando.com",
+   "jd_text": "- [x] \n\nMenu [![Image 1: Menu](https://jobs.zalando.com/images/logos/Zalando_Wordmark_Black.svg)](https://jobs.zalando.com/en)[![Image 2: Menu](https://jobs.zalando.com/images/icons/search.svg)](https://jobs.zalando.com/en/jobs)\n\n*   [All Jobs![Image 3: Menu](https://jobs.zalando.com/images/icons/arrow-right.svg)](https://jobs.zalando.com/en/jobs)\n\n*   [Careers Home](https://jobs.zalando.com/en) \n*   - [x] [Our Culture](https://jobs.zalando.com/en/our-culture)Toggle accordion![Image 4: Toggle accordion](https://jobs.zalando.com/images/icons/chevron-down.svg)  \n    *   [Perks & Benefits](https://jobs.zalando.com/en/our-culture/perks-and-benefits)\n    *   [Diversity & Inclusion](https://jobs.zalando.com/en/our-culture/diversity-and-inclusion)\n    *   [Sustainability](https://jobs.zalando.com/en/our-culture/sustainability)\n\n*   - [x] [What We Do](https://jobs.zalando.com/en/what-we-do)Toggle accordion![Image 5: Toggle accordion](https://jobs.zalando.com/images/icons/chevron-down.svg)  \n    *   [Job Categories](https://jobs.zalando.com/en/what-we-do#job-categories)\n    *   [Early Careers](https://jobs.zalando.com/en/what-we-do/early-careers)\n\n*   [Where We Work](https://jobs.zalando.com/en/where-we-work) \n*   [How We Hire](https://jobs.zalando.com/en/how-we-hire) \n*   [Blog](https://jobs.zalando.com/en/blog) \n\n[EN](https://jobs.zalando.com/en/jobs/2726502-Senior-Principal-Product-Manager---Recommendation-)[DE](https://jobs.zalando.com/de/jobs/2726502-Senior-Principal-Product-Manager---Recommendation-)\n\n[All Jobs![Image 6: Menu](https://jobs.zalando.com/images/icons/arrow-right.svg)](https://jobs.zalando.com/en/jobs)\n\n# Senior Principal Product Manager - Recommendation & Lifestyle Intelligence (all genders)\n\nLocation Switzerland - Zurich, Germany - Berlin Contract Full time Job Category Product Management\n\nApply\n\nBack to job description\n## Application Form\n\nFirst Name* Last Name* Email* \n\nCountry Code* \n\nPhone Number* \n\nRésume*![Image 7](https://jobs.zalando.com/images/icons/plus.svg)Attach File \n\nPDF only. Maximum file size: 10 MB.\n\nCover Letter![Image 8](https://jobs.zalando.com/images/icons/plus.svg)Attach File \n\nPDF only. Maximum file size: 10 MB.\n\nLinkedIn Profile How did you hear about this job? Please enter your earliest possible starting date. Please tell us your salary expectations (annual gross salary, number format without special characters)* Attach a file, if applicable.![Image 9](https://jobs.zalando.com/images/icons/plus.svg)Attach File \n\nPDF only. Maximum file size: 10 MB.\n\nAre you currently based in the European Union or do you possess a valid work permit/residence title for the European Union (EU)?* Are you employed by any of Zalando entities?* I identify as* \n\nWe process your gender for statistical reasons and separated from the recruitment process to foster inclusivity and diversity. Learn more in our [Privacy Information](https://jobs.zalando.com/en/privacy-policy/).\n\nPlease read our [privacy information](https://jobs.zalando.com/",
+   "found_on": "2026-11-20",
+   "ai": true
+  },
+  {
+   "id": "daec4b4e3756",
+   "category": "Abroad",
+   "title": "Senior Product Manager / Product Owner",
+   "organization": "DXC Luxoft",
+   "location": "Pune, India",
+   "work_type": null,
+   "posted": "2026-11-17",
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "Experienced",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://career.luxoft.com/jobs/senior-product-manager-product-owner-29476",
+   "apply_url": "https://career.luxoft.com/jobs/senior-product-manager-product-owner-29476",
+   "how_to_apply": "Apply online through the job posting page.",
+   "summary": "This role requires leading complex digital capabilities across KYC/AML and Client Lifecycle Management. The person will own product capabilities end-to-end from discovery and strategy through delivery.",
+   "requirements": [
+    "Own product capabilities end-to-end from discovery, strategy and roadmap",
+    "Translate complex business problems into epics, features, user stories",
+    "Build and prioritise the product backlog",
+    "Define requirements for REST APIs",
+    "Use data and basic SQL to investigate issues"
+   ],
+   "documents": [],
+   "fit": 2,
+   "fit_reason": "It is a Senior Product Manager role matching the experience level, but it is located in India rather than the preferred regions or remote options.",
+   "source": "career.luxoft.com",
+   "jd_text": "[Skip to content](#main-content)\n\n\n[![DXC Technology](/theme/luxoft/assets/images/dxc/dxc-logo.svg) ![Luxoft logo](/theme/luxoft/assets/images/dxc/luxoft-logo.svg)](/)\n\n[![Arrow right](/theme/luxoft/assets/images/dxc/icons/gray-arrow.svg) Back to jobs](/jobs) \n\n# Senior Product Manager / Product Owner\n\nSenior Product Manager / Product Owner\n\n[Apply](#job-form)\n\n![x share icon](/theme/luxoft/assets/images/icons/x-white.svg)\n\n![successfully icon](/theme/luxoft/assets/images/icons/successfully.svg)\n\nSuccessfully\n\nThe vacancy has been successfully added to favorites\n\n![location icon](/theme/luxoft/assets/images/icons/white-pin.svg)\n\nPune, India\n\n![specialization icon](/theme/luxoft/assets/images/icons/job-position.svg)\n\nProduct Owner\n\n![lob icon](/theme/luxoft/assets/images/icons/white-clock.svg)\n\nBCM Industry\n\n![date icon](/theme/luxoft/assets/images/icons/white-date.svg)\n\n17/11/2026\n\nReq. VR-126104\n\n[Apply](#job-form)\n\n* Facebook\n* ![x share icon](/theme/luxoft/assets/images/icons/x-white.svg)\n\n  Twitter\n* Linkedin\n* [Mail](mailto:?subject=Check%20out%20this%20job!&body=https://career.luxoft.com/jobs/senior-product-manager-product-owner-29476)\n\n##### Project description\n\nWe are looking for an experienced Senior Product Manager to lead complex digital capabilities across KYC/AML and Client Lifecycle Management (CLM). You will work at the intersection of business stakeholders, Vendor teams, Architects and Engineers, driving the product development journey from discovery to delivery through continuous improvement.  \n  \nThis is a hands-on Individual Contributor role for someone comfortable moving between stakeholder workshops, process design, wireframes, API specifications, user stories, and Agile engineering delivery.\n\n##### Responsibilities\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nOwn product capabilities end-to-end from discovery, strategy and roadmap through delivery, adoption and optimisation.\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nTranslate complex KYC/AML and business problems into epics, features, user stories, acceptance criteria and measurable outcomes.\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nBuild and prioritise the product backlog, balancing business value, regulatory needs, technology dependencies and technical debt.\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nLead discovery workshops and create process flows, client/user journeys, wireframes and UI mock-ups.\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nPartner closely with Engineering, Architecture, Operations, Product lead and business stakeholders.\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nDefine requirements for REST APIs, including request/response behavior, JSON structures, data mapping, validation, errors and integration scenarios.\n\n![bullet icon](/theme/luxoft/assets/images/icons/job-bullet.svg)\n\nDrive Agile delivery through refineme",
+   "found_on": "2026-11-20",
+   "ai": true
+  },
   {
    "id": "b94a0a5091d9",
    "category": "Abroad",
