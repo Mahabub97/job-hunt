@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-21T13:17+06:00",
+ "updated_at": "2026-11-22T12:57+06:00",
  "last_run": {
-  "at": "2026-11-21T13:17+06:00",
-  "new": 7,
+  "at": "2026-11-22T12:57+06:00",
+  "new": 1,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -14,7 +14,7 @@
    },
    {
     "source": "Web search",
-    "status": "29 searches, 162 results"
+    "status": "29 searches, 150 results"
    },
    {
     "source": "Remotive",
@@ -26,7 +26,11 @@
    },
    {
     "source": "AI",
-    "status": "Checked 58 of 58 results with 11 AI calls (gemini-3.5-flash-lite)"
+    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
+   },
+   {
+    "source": "AI",
+    "status": "Checked 44 of 44 results with 11 AI calls (gemini-3.1-flash-lite, gemini-3.5-flash-lite)"
    },
    {
     "source": "Alerts",
@@ -35,6 +39,42 @@
   ]
  },
  "jobs": [
+  {
+   "id": "6ce7c6f7bcf0",
+   "category": "Bank",
+   "title": "Head of Global Payments Solutions, Bangladesh",
+   "organization": "HSBC Global Services Limited",
+   "location": "Dhaka, Bangladesh",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "Broad commercial banking and relationship management experience",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://apply.careers.hsbc.com/job/Dhaka-Head-of-Global-Payments-Solutions%2C-Bangladesh-Dhak-1208/1378026157",
+   "apply_url": null,
+   "how_to_apply": "Apply through the HSBC careers portal.",
+   "summary": "This is a senior leadership role responsible for setting the strategy and managing the Global Payments Solutions business for HSBC in Bangladesh. The role requires deep expertise in transaction banking, product management, and stakeholder management.",
+   "requirements": [
+    "In-depth knowledge of GPS business",
+    "Commercial banking and relationship management experience",
+    "Proven track record of business growth",
+    "Strong risk awareness",
+    "Experience in a matrix organization"
+   ],
+   "documents": [],
+   "fit": 4,
+   "fit_reason": "The candidate has 6 years of experience in payments and product management within a tech-focused environment, which aligns well with the requirements for this senior banking role.",
+   "source": "apply.careers.hsbc.com",
+   "jd_text": "# Head of Global Payments Solutions, Bangladesh\n\nDhaka, Dhaka, BD, 1208\n\n## Job description\n\n*Ready to shape payments solutions for HSBC in Bangladesh?*\n\n**Why HSBC**\n\nHSBC is one of the largest banking and financial services organisations in the world. Guided by our purpose of opening up a world of opportunity, our ambition is to become the world’s most trusted bank globally, putting customers at the heart of everything we do.\n\n**The Role**\n\nThis role sets the direction for HSBC’s Global Payments Solutions (GPS) business in Bangladesh, translating global strategy into client outcomes in a fast-moving market. You’ll build franchise value and reputation by connecting clients to HSBC’s global and regional corridors and ensuring a consistent delivery of high-quality solutions and service. Success means delivering sustainable revenue and PBT growth while balancing growth with a strong risk and control environment. You’ll shape a competitive payments proposition across channels aligned to customer group needs. You’ll strengthen client relationships by partnering across HSBC and maintaining strong external networks with regulators, fintechs and vendors. You’ll also build an inclusive, high-performing and customer-oriented culture with clear priorities and accountability.\n\n**What you'll be doing**\n\n- Execute the GPS global strategy locally to deliver consistent world-class solutions and services to clients\n- Build GPS franchise value and reputation in Bangladesh by leveraging global and regional corridors\n- Deliver revenue and PBT growth targets through a sustainable business model that balances growth and risk management\n- Manage business strategy development and implementation including overseas resource and budget management\n- Develop a comprehensive and competitive suite of payments solutions across channels through commercially focused product management\n- Embed a client-centric service culture that strengthens post-sales support for CIB clients across GPS products\n- Position HSBC as a top payments provider through an effective marketing strategy and strong performance in cash management surveys\n- Champion cross-HSBC collaboration and strengthen relationships with regulators, fintechs, IT vendors and other key stakeholders\n- Strengthen risk and control across GPS including operational, financial and project management and effective issue escalation\n\n**What we're looking for**\n\n- Bring in-depth knowledge of the GPS business with broad commercial banking and relationship management experience\n- Demonstrate a proven track record of delivering business growth in a dynamic environment\n- Apply strong commercial judgement to balance risk and return across changing economic, client and regulatory conditions\n- Resolve complex problems using structured thinking and sound decision-making\n- Bring deep market knowledge to advance digital change with clients and manage product lifecycle activity in transaction banking\n- Apply strong risk awareness with extensive",
+   "found_on": "2026-11-22",
+   "ai": true
+  },
   {
    "id": "083317e9f7e3",
    "category": "Abroad",
@@ -874,41 +914,6 @@
    "fit_reason": "It is a relevant bank manager-level role in Bangladesh, though focused on credit administration rather than product or digital banking.",
    "source": "career.primebank.com.bd",
    "jd_text": "Job Title, Opening Date, Closing Date. Manager-Senior Manager, CIB Reporting & Operations Unit, Credit Administration. 12-Nov-2026, 26-Nov-2026",
-   "found_on": "2026-11-18",
-   "ai": true
-  },
-  {
-   "id": "2813af1e29da",
-   "category": "Bank",
-   "title": "Relationship Officer (Branch Banking)",
-   "organization": "National Credit and Commerce Bank PLC",
-   "location": "Anywhere in Bangladesh",
-   "work_type": "On-site",
-   "posted": "2026-11-12",
-   "application_start": null,
-   "deadline": "2026-11-21",
-   "vacancies": null,
-   "salary": "Negotiable",
-   "experience": "At least 1 year",
-   "age_limit": null,
-   "max_age_years": null,
-   "age_as_of": null,
-   "fee": null,
-   "url": "https://www.facebook.com/BangladeshHRAdminWelfareMedicalJob/posts/national-credit-and-commerce-bank-plcposition-relationship-officer-branch-bankin/122146979265383816",
-   "apply_url": null,
-   "how_to_apply": null,
-   "summary": "The Relationship Officer will acquire and onboard new retail and SME clients while managing long-term relationships to expand the bank's customer base. The role involves driving loan and deposit targets, conducting client visits, and performing financial analysis for credit proposals.",
-   "requirements": [
-    "MBA/MBM/Masters preferably Business from UGC approved universities with no 3rd class",
-    "Minimum 16 years of schooling",
-    "At least 1 year of work experience as Relationship Officer or relevant experience in a commercial bank or financial institution",
-    "Preference given to candidates with experience in Shariah-based Islamic bank or an Islamic Banking Window"
-   ],
-   "documents": [],
-   "fit": 3,
-   "fit_reason": "It is a relevant officer-level banking position in Bangladesh that matches the applicant's educational background in business and MBA.",
-   "source": "facebook.com",
-   "jd_text": "[Log in](https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&next=%2FBangladeshHRAdminWelfareMedicalJob%2Fposts%2Fnational-credit-and-commerce-bank-plcposition-relationship-officer-branch-bankin%2F122146979265383816)\n\nLog in\n\n[Forgotten account?](https://www.facebook.com/recover/initiate?ars=royal_blue_bar)\n\n## Bangladesh HR Admin & Welfare Medical Job-P2's post\n\n* * *\n\n[](https://www.facebook.com/stories/122096028099383816/UzpfSVNDOjE2ODgxMjEyMjYyNzY0NzA=/?view_single=false&__cft__[0]=AZiNwdRI4oSWjCpVCpqZWH2fl-O1egEdQyyVJitzI0KEKDL-jJ1-qN3JWuCsuc2AVbglgtJXg374MoaEf80m2PargPDmfe4Sr6E8kNXS_JIEKluDCJA4wX6jIfnq6Z9tbGOrJ9Svx85Vcs_iWhnqMpCTAbFkAWqiZTqZ&__tn__=%3C%3C%2CP-R)\n\n### [**Bangladesh HR Admin & Welfare Medical Job-P2**](https://www.facebook.com/BangladeshHRAdminWelfareMedicalJob?__cft__[0]=AZiNwdRI4oSWjCpVCpqZWH2fl-O1egEdQyyVJitzI0KEKDL-jJ1-qN3JWuCsuc2AVbglgtJXg374MoaEf80m2PargPDmfe4Sr6E8kNXS_JIEKluDCJA4wX6jIfnq6Z9tbGOrJ9Svx85Vcs_iWhnqMpCTAbFkAWqiZTqZ&__tn__=-UC%2CP-R)\n\n5 days ago\n\nThursday 12 November 2026 at 07:12\n\n[5d](https://www.facebook.com/BangladeshHRAdminWelfareMedicalJob/posts/pfbid0kVCwj94gmEtpvBV2dnvheAXaeTWY7goenynk988Aq6yt95HpgFxdbm2FQcDHhgrwl?__cft__[0]=AZiNwdRI4oSWjCpVCpqZWH2fl-O1egEdQyyVJitzI0KEKDL-jJ1-qN3JWuCsuc2AVbglgtJXg374MoaEf80m2PargPDmfe4Sr6E8kNXS_JIEKluDCJA4wX6jIfnq6Z9tbGOrJ9Svx85Vcs_iWhnqMpCTAbFkAWqiZTqZ&__tn__=%2CO%2CP-R) · \n\nNational Credit and Commerce Bank PLC\n\nPosition: Relationship Officer (Branch Banking) : AO-Officer\n\nApplication Deadline :21 Nov 2026\n\nVacancy:--\n\nLocation: Anywhere in Bangladesh\n\nSalary:Negotiable\n\nExperience:At least 1 year\n\nEducation:\n\nMBA/MBM/Masters (preferably Business) from UGC approved universities having no 3rd class in academic records.·\n\nCandidate having minimum 16 years of schooling will be eligible.\n\nExperience\n\nAt least 1 year\n\nThe applicants should have experience in the following business area(s): Banks\n\nAdditional Requirements\n\nMinimum 01 year of work experience as Relationship Officer or relevant experience in a commercial bank/ financial institution. \n\nPreference will be given to candidates with experience in Shariah-based Islamic bank or an Islamic Banking Window of a conventional bank.\n\nJob Location: Anywhere in Bangladesh except Dhaka (as per bank’s requirement).\n\nResponsibilities & Context:\n\nIdentify, acquire and onboard new retail & SME clients to expand the bank’s customer base, ensuring alignment with the bank’s business strategy.\n\nBuild, nurture, and maintain long-term, trust-based relationships with retail & SME clients, ensuring superior service, satisfaction and retention.\n\nDrive business by expanding the customer base and achieving targets for loans & deposit by cross-selling and up-selling appropriate banking products and services tailored to client needs.\n\nConduct regular visits to existing and prospective clients to strengthen relationships, explore opportunities and provide proactive solutions.\n\nAddress and resolve client concerns promp",
    "found_on": "2026-11-18",
    "ai": true
   },
