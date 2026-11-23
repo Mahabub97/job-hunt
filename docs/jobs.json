@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-22T12:57+06:00",
+ "updated_at": "2026-11-23T13:47+06:00",
  "last_run": {
-  "at": "2026-11-22T12:57+06:00",
-  "new": 1,
+  "at": "2026-11-23T13:47+06:00",
+  "new": 2,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -14,7 +14,7 @@
    },
    {
     "source": "Web search",
-    "status": "29 searches, 150 results"
+    "status": "29 searches, 162 results"
    },
    {
     "source": "Remotive",
@@ -26,11 +26,7 @@
    },
    {
     "source": "AI",
-    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
-   },
-   {
-    "source": "AI",
-    "status": "Checked 44 of 44 results with 11 AI calls (gemini-3.1-flash-lite, gemini-3.5-flash-lite)"
+    "status": "Checked 76 of 76 results with 14 AI calls (gemini-3.5-flash-lite)"
    },
    {
     "source": "Alerts",
@@ -39,6 +35,74 @@
   ]
  },
  "jobs": [
+  {
+   "id": "213fa37f6f9d",
+   "category": "Remote",
+   "title": "Sr. Product Manager",
+   "organization": "Friends From The City",
+   "location": "Remote",
+   "work_type": "Remote",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": "$158,000/year",
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://techjobsforgood.com/jobs/38061?ref=homepage",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the Tech Jobs for Good platform link.",
+   "summary": "The Senior Product Manager will lead product strategy and delivery for the U.S. Department of State's Consular Appointment Management Platform. The role involves guiding a global rollout of visa scheduling systems and coordinating across engineering and design teams.",
+   "requirements": [
+    "Senior federal product management experience",
+    "Agile leadership experience",
+    "Team leadership spanning product, design, and engineering"
+   ],
+   "documents": [],
+   "fit": 3,
+   "fit_reason": "It is a remote Senior Product Manager role, but it specifically restricts candidates to the Continental U.S.",
+   "source": "techjobsforgood.com",
+   "jd_text": "# Senior Product Manager\n\nFriends From The City · Remote (US)\n\n**Job Title:** Sr. Product Manager**Location:** 100% Remote - anywhere in the Continental U.S.**Salary:** $158,000/year**Note:** All advertised positions are salaried and full-time.\n\n## **About Us**\n\nFriends From The City is a design, research, and engineering company focused on public impact. Our mission is to make digital interactions with government simple, intuitive, and accessible. That means removing barriers like confusing user flows, inaccessible content, and language limitations that prevent people from getting what they need.\n\nWe build digital products using accessible design, rigorous research, and reliable code.\n\n## **About the Role**\n\nAbout the Role\n\nMillions of people rely on government websites and applications to access critical services like healthcare, housing, and financial support. But when those tools are slow, confusing, or difficult to use, it can make essential tasks feel impossible.\n\nAs a **Product Manager at Friends,** you will help lead that work. You will bring clarity, direction, and structure to teams building digital tools that serve real people with real needs. Your role is to ensure we are solving the right problems, delivering usable solutions, and creating lasting impact through thoughtful strategy.\n\n## **Requirements**\n\n**What you'll achieve:**In this role, you will lead product strategy and delivery for the U.S. Department of State’s Consular Appointment Management Platform (CAMP). CAMP replaces several older scheduling systems with one modern platform that serves more than 300 consular posts around the world. Some of the things you may do include:\n\n- Shape the product vision and roadmap for CAMP, starting with a global rollout of Non-Immigrant Visa (NIV) scheduling that changes how millions of visa applicants book appointments with the U.S. government\n- Serve as the main liaison to the Bureau of Consular Affairs product team, turning the needs of consular officers, post staff, and the public into a clear, prioritized delivery plan\n- Lead and supervise the full contractor team across product, design, engineering, and training\n- Own the backlog and write and prioritize user stories across the public scheduling experience, the tools post staff use to manage appointments, and a Crisis Volunteer Scheduling tool for State Department staff\n- Work with design and research to make sure every release is based on evidence from users, is fully Section 508 compliant, and works for posts that operate very differently from one another\n- Guide a rollout that starts at a pilot post and expands worldwide, managing post onboarding, change management, and shifting requirements as you go\n- Report progress and risks clearly to Consular Affairs leadership, and tie product decisions to measurable results like appointment completion time and user satisfaction\n\n**Skills You’ll Need to Bring:**The ideal candidate will bring a mix of the following:\n\n- **Senior federal produc",
+   "found_on": "2026-11-23",
+   "ai": true
+  },
+  {
+   "id": "6dad67d09ab9",
+   "category": "Bank",
+   "title": "Senior Manager, Sustainable Finance Unit (Up to VP)",
+   "organization": "Bank Asia",
+   "location": "Dhaka",
+   "work_type": null,
+   "posted": "2026-11-21",
+   "application_start": null,
+   "deadline": "2026-11-26",
+   "vacancies": null,
+   "salary": null,
+   "experience": "8-10 years banking, 3+ in sustainable finance / ESG",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.facebook.com/bdRecruit.net/posts/bank-asia-is-hiring-senior-manager-sustainable-finance-unit-up-to-vprequirements/122160592503005149",
+   "apply_url": "https://bdrecruit.net/job/senior-manager-sustainable-finance-unit-up-to-vp-bank-asia/",
+   "how_to_apply": "Apply online through the provided BDRecruit job link.",
+   "summary": "Bank Asia is hiring a Senior Manager for its Sustainable Finance Unit up to the VP grade in Dhaka. The role requires extensive banking and ESG or sustainable finance experience.",
+   "requirements": [
+    "Graduation from a reputed university",
+    "8-10 years banking experience",
+    "3+ years in sustainable finance / ESG"
+   ],
+   "documents": [],
+   "fit": 2,
+   "fit_reason": "It is a banking role in Dhaka at a senior manager level, but requires specific sustainable finance and ESG background rather than product or general digital banking.",
+   "source": "facebook.com",
+   "jd_text": "# BDRecruit on Facebook: \"Bank Asia is Hiring Senior Manager, Sustainable Finance Unit (Up to VP) Requirements: • Graduation f…\"\n\nBank Asia is Hiring Senior Manager, Sustainable Finance Unit (Up to VP)\n\nRequirements:\n• Graduation from a reputed university\n• 8-10 years banking, 3+ in sustainable finance / ESG\n• Grade: up to VP, Dhaka\n• Application deadline: 26 November 2026\n\n✅ Apply Now: https://bdrecruit.net/job/senior-manager-sustainable-finance-unit-up-to-vp-bank-asia/\n__\n\nHiring for your company? Put your vacancy in front of the right job seekers with The CV Guy's Paid Vacancy Promotion Service.\n\nMessage us to get started.\nWhatsApp: wa.me/+8801817118571\n__\n\nখালি page এর সামনে বসে ভাবছেন CV তে কী লিখবেন? bdRecruit এর AI-powered CV Builder আপনার experience থেকে professional bullet point লিখতে সাহায্য করবে, আর ATS score বলে দেবে CV কতটা ready।\n\nশুরু করুন এখান থেকে:\nhttps://cvbuilder.bdrecruit.net\n\nN.B. bdRecruit is a job listing and vacancy promotion platform connecting job seekers and recruiters and is not affiliated with Bank Asia. This vacancy was collected from public, verified sources. To have it removed, please contact our team and we will take it down.\n\n#BankAsia #BankJobs #SustainableFinance #ESG #JobsInBangladesh #JobCircular2026 #bdRecruit\n\n[Image: May be a graphic of text]\n\n- **Author:** [BDRecruit](https://www.facebook.com/bdRecruit.net)\n- **Posted:** 2026-11-21T17:15:03+00:00\n- **Shared link:** <https://www.facebook.com/photo.php?fbid=122160592491005149&set=a.122107167171005149&type=3>\n- **Links:** <https://www.facebook.com/photo.php?fbid=122160592491005149&set=a.122107167171005149&type=3>, <https://bdrecruit.net/job/senior-manager-sustainable-finance-unit-up-to-vp-bank-asia/>, <http://wa.me/+8801817118571>, <https://cvbuilder.bdrecruit.net/>\n- **Reactions:** 0\n- **Comment count:** 0\n- **Shares:** 0\n- **Privacy:** Public\n",
+   "found_on": "2026-11-23",
+   "ai": true
+  },
   {
    "id": "6ce7c6f7bcf0",
    "category": "Bank",
@@ -524,41 +588,6 @@
    "fit_reason": "The candidate has strong product management experience in travel tech and growth, matching the seniority and domain, though it is located in the US rather than one of the preferred regions.",
    "source": "jobs.uber.com",
    "jd_text": "# Product Manager II - Product\n\nLocation\n\nNew York City, New York\n\nTeam\n\nProduct\n\nSubteam\n\nProduct Management\n\nPosition Type\n\nFull time\n\nPosted on\n\nNov 17, 2026\n\n**About the role and team**\n\nProduct at Uber means making big decisions without perfect information—and owning the outcomes. As a Product Manager II, you will turn complexity into clarity at speed, navigate competing priorities, and lead through influence, not control. This role is about solving what is hard to shape the future of movement.\n\nYou will navigate the messy reality of marketplace mechanics where the path forward is rarely predefined. We need leaders who move with urgency and stay resilient when faced with high-stakes ambiguity. If you think critically and want to solve real-world problems under real-world constraints, this is where you will grow.\n\n**What you’ll do**\n\n- Build a bold product vision and roadmap, identifying near and long-term initiatives that balance global scaling with the unique needs of local markets.\n- Navigate and align cross-functional teams—including Engineering, Design, Data Science, and Ops—to drive a unified strategy across competing priorities.\n- Execute end-to-end by translating unstructured user pain points into clear product requirements, hypotheses, and desired outcomes.\n- Lead the integration with external partners and aggregators to deliver scalable, seamless booking and ticketing flows for ground transport.\n- Iterate relentlessly by distilling insights from performance dashboards, A/B testing, and user research to continuously improve the trip experience.\n- Own the \"messiness\" of the platform, managing technical constraints and trade-offs to ensure riders and earners have a flawless, efficient journey every time.\n\n**Basic Qualifications**\n\n- 4+ years of experience as a Product Manager, with a proven track record of shipping successful, consumer-facing mobile or web products.\n- Demonstrated ability to ship large-sized projects each quarter that make a positive, quantifiable impact on product group KPIs.\n- Proven experience seeking clarity on ambiguously defined problems and independently identifying/addressing obstacles with a sense of urgency.\n- Strong technical depth with an understanding of how full-stack systems work; capable of guiding requirements, architecture, and implementation.\n- Experience leading cross-functional teams (Eng, Data, Design) and coordinating dependencies to prevent collisions with other teams.\n- Proficient in using data science and analytics to understand product health, inform development, and lead deeply experimental teams through well-designed A/B tests.\n- Highly proficient in UX/UI paradigms; able to guide design priorities and drive fast iteration cycles for new concepts.\n- Education: Bachelor’s Degree in Computer Science, Engineering, Business, or a related technical/quantitative field.\n\n**Preferred Qualifications**\n\n- Deep understanding of marketplace mechanics and the intersection of digital and physical operati",
-   "found_on": "2026-11-19",
-   "ai": true
-  },
-  {
-   "id": "59a2669e6c75",
-   "category": "Private",
-   "title": "Product Manager",
-   "organization": "Vivasoft Limited",
-   "location": "Dhaka",
-   "work_type": "On-site",
-   "posted": null,
-   "application_start": null,
-   "deadline": "2026-11-22",
-   "vacancies": null,
-   "salary": null,
-   "experience": "3 to 5 years as a Product Manager or Product Owner",
-   "age_limit": null,
-   "max_age_years": null,
-   "age_as_of": null,
-   "fee": null,
-   "url": "https://www.facebook.com/groups/EEECSEIT/posts/2210179443045351",
-   "apply_url": "https://web.facebook.com/photo.php?fbid=122205760910790332&set=gm.2210179443045351&type=3",
-   "how_to_apply": "Apply through the application link provided in the comment box.",
-   "summary": "Vivasoft Limited is looking for a Product Manager to join their team in Dhaka. The role involves taking products from zero to launch and working closely with product data, Jira, and Figma.",
-   "requirements": [
-    "3 to 5 years as a Product Manager or Product Owner",
-    "At least one product taken from zero to launch",
-    "Clear English, written and spoken",
-    "Comfortable with Jira, Figma, and product data"
-   ],
-   "documents": [],
-   "fit": 4,
-   "fit_reason": "Matches the candidate's product management experience and target location in Dhaka, though requires slightly fewer years of experience than the candidate has.",
-   "source": "facebook.com",
-   "jd_text": "# Career Sync BD on Facebook: \"Vivasoft Limited is hiring | Product Manager! What they ask for: > 3 to 5 years as a Product Manager…\"\n\nVivasoft Limited is hiring | Product Manager!\n\nWhat they ask for:\n\n> 3 to 5 years as a Product Manager or Product Owner\n\n> At least one product you took from zero to launch\n\n<\n\nClear English, written and spoken\n\nComfortable with Jira, Figma and product data\n\nLocation: Dhaka. Full-time.\n\nLast date to apply: 22 November.\n\nApplication link in the comment box\n\n[Image: May be an image of text]\n\n- **Author:** Career Sync BD\n- **Group:** [CSE/EEE/IT Jobs in Bangladesh™](https://web.facebook.com/groups/EEECSEIT/)\n- **Posted:** 2026-11-16T10:41:41+00:00\n- **Shared link:** <https://web.facebook.com/photo.php?fbid=122205760910790332&set=gm.2210179443045351&type=3>\n- **Links:** <https://web.facebook.com/photo.php?fbid=122205760910790332&set=gm.2210179443045351&type=3>\n- **Reactions:** 10\n- **Comment count:** 3\n- **Shares:** 0\n- **Privacy:** Public group\n\n## Comments\n\n- **Mahmudul Hasan Miraz**: PRODUCT MANAGER EI AI ER JUGE KI DRKAR? CHAGOL NAKI?\n  - **CleverOctopus2683**: Mahmudul Hasan Miraz রাগ করলেন নাকি ভাই ?\n    - **Mahmudul Hasan Miraz**: CleverOctopus2683 ai er juge product manager ki dorkar? Kalo taka sada kora naki?\n",
    "found_on": "2026-11-19",
    "ai": true
   },
