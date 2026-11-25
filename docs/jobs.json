@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-24T15:59+06:00",
+ "updated_at": "2026-11-25T14:44+06:00",
  "last_run": {
-  "at": "2026-11-24T15:59+06:00",
-  "new": 7,
+  "at": "2026-11-25T14:44+06:00",
+  "new": 5,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -14,7 +14,7 @@
    },
    {
     "source": "Web search",
-    "status": "29 searches, 166 results"
+    "status": "29 searches, 168 results"
    },
    {
     "source": "Remotive",
@@ -26,11 +26,7 @@
    },
    {
     "source": "AI",
-    "status": "gemini-3.5-flash-lite: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try a"
-   },
-   {
-    "source": "AI",
-    "status": "Checked 71 of 71 results with 17 AI calls (gemini-3.1-flash-lite, gemini-3.5-flash-lite)"
+    "status": "Checked 67 of 67 results with 16 AI calls (gemini-3.5-flash-lite)"
    },
    {
     "source": "Alerts",
@@ -39,6 +35,182 @@
   ]
  },
  "jobs": [
+  {
+   "id": "1c407840c2bf",
+   "category": "Remote",
+   "title": "Senior Product Manager, User Acquisition",
+   "organization": "RevenueCat",
+   "location": "Remote",
+   "work_type": "Remote",
+   "posted": "2026-11-25",
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "5+ years of experience owning meaningful product or growth decisions end-to-end",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://jobicy.com/jobs/156992-senior-product-manager-user-acquisition",
+   "apply_url": null,
+   "how_to_apply": "Apply through the job posting link on Jobicy or the company careers site.",
+   "summary": "As the Senior Product Manager for User Acquisition at RevenueCat, you will lead a zero-to-one product initiative to help mobile developers acquire the right users. The role involves defining strategy, building acquisition tools, and leveraging deep visibility into subscription and monetization outcomes.",
+   "requirements": [
+    "5+ years of experience owning product or growth decisions end-to-end",
+    "Deep, hands-on experience with mobile user acquisition or building acquisition products",
+    "Ability to shape strategy and build zero-to-one products",
+    "Strong understanding of mobile app monetization and ecosystems"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "The candidate has strong senior product management and growth experience that perfectly aligns with this remote Senior Product Manager role which accepts applicants from APAC, including Bangladesh.",
+   "source": "Jobicy",
+   "jd_text": "Job title: Senior Product Manager, User Acquisition\nCompany: RevenueCat\nWho can apply: APAC,  EMEA,  LATAM,  Canada,  USA\nSalary: not stated\nPosted: 2026-11-25\n\nRevenueCat gives app businesses the infrastructure and tools to build, run, and improve their monetization. Since graduating from YC's S18 batch, we've grown into the default monetization platform for mobile. \nWe're in 50%+ of newly shipped subscription apps, we process $16B+ in annual purchase volume, and we help everyone from a solo developer to the OpenAI mobile team understand and grow their revenue.\nWe're a remote-first team of 150+ people across 25+ countries, guided by values we actually practice: Customer Obsession, Always Be Shipping, Own It, and Balance. \nThis isn't the right fit for everyone. The systems you’ll build here manage billions of dollars and touch hundreds of millions of end users, and we don’t take that lightly. You'll be expected to work hard and hold a high bar for what you ship, alongside some of the sharpest, most driven people you've worked with. If that sounds energizing rather than exhausting, keep reading.\nThe Role\nAs Senior Product Manager, User Acquisition, you'll explore an important extension of how RevenueCat helps developers grow: helping them not just monetize the users they have, but acquire more of the right users in the first place.\nRevenueCat already has several footholds in user acquisition, including our Apple Ads integration and integrations across the attribution and MMP ecosystem. But we're still early in defining what a broader RevenueCat user acquisition product should become. You'll be the first dedicated product hire focused on this space, reporting directly to our product lead for Ads, with significant latitude to shape both the strategy and the products we build.\nThis is a genuine zero-to-one role. You won't inherit a predetermined roadmap. Your job will be to deeply understand how app developers acquire users today, identify where RevenueCat has an opportunity to solve problems meaningfully better, and turn those insights into products we can test, ship, and scale.\nYou'll bring real expertise in mobile performance marketing and user acquisition to that process. The opportunity could eventually span attribution and measurement, products built on top of existing acquisition channels, new ways to optimize spend using downstream monetization data, partnerships, advertising infrastructure, or things we haven't considered yet. We have hypotheses, but we're hiring you in part because we want your perspective on which ones are worth pursuing.\nRevenueCat has some unusual advantages to build from: relationships with a large ecosystem of app developers, deep visibility into subscription and monetization outcomes, infrastructure already embedded in apps, and a growing advertising business. The challenge is figuring out how those assets can translate into something uniquely valuable for developers trying to grow.\nAbout you:\nYou have 5+ years of exp",
+   "found_on": "2026-11-25",
+   "ai": true
+  },
+  {
+   "id": "05b5cad8c91a",
+   "category": "Bank",
+   "title": "Manager, BACH Payments and Transactions",
+   "organization": "BRAC Bank PLC",
+   "location": "Dhaka",
+   "work_type": "Full-time",
+   "posted": null,
+   "application_start": null,
+   "deadline": "2026-11-25",
+   "vacancies": null,
+   "salary": null,
+   "experience": "3-6 years of banking experience in BACH operations and BEFTN/RTGS channels",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://thecvguy.net/bank-jobs/brac-bank-manager-bach-payments-and-transactions-2026",
+   "apply_url": "https://bdjobs.com/h/apply-online/1559090",
+   "how_to_apply": "Apply online through the bdjobs Hot Jobs circular using the Apply Now button.",
+   "summary": "You will lead the BACH Clearing Unit in the Operations Division, handling outward and inward clearing and payment channels. You will also drive cross-functional projects and process improvements.",
+   "requirements": [
+    "Postgraduate or undergraduate degree from a UGC-approved university",
+    "3-6 years of banking experience in BACH operations and BEFTN/RTGS channels",
+    "Sound knowledge of Bangladesh Bank clearing regulations, EFT/RTGS/NPSB and AML/CFT"
+   ],
+   "documents": [
+    "ATS friendly CV tailored to this role"
+   ],
+   "fit": 4,
+   "fit_reason": "Matches the bank manager-level role criteria in Bangladesh with a focus on payments and transactions, suitable for a candidate with strong MBA and finance background.",
+   "source": "thecvguy.net",
+   "jd_text": "![BRAC Bank is Hiring Senior Manager Credit Risk Enterprise Risk Management](https://thecvguy.net/wp-content/uploads/2026/11/BRAC-Bank-is-Hiring-Senior-Manager-Credit-Risk-Enterprise-Risk-Management_2026_The-CV-Guy-Top-Rated-CV-Writing-Company.jpg \"BRAC Bank Job Circular 2026 | Manager, BACH Payments and Transactions 3 The CV Guy is the No.1 Resume/CV Writer in Bangladesh, Asia & Middle East\")\n\n## BRAC Bank Job Circular 2026 | Manager, BACH Payments and Transactions\n\n![BRAC Bank is Hiring Manager BACH Payments and Transactions](https://thecvguy.net/wp-content/uploads/2026/11/BRAC-Bank-is-Hiring-Manager-BACH-Payments-and-Transactions_2026_The-CV-Guy-Top-Rated-CV-Writing-Company-1024x1024.jpg \"BRAC Bank Job Circular 2026 | Manager, BACH Payments and Transactions 1 The CV Guy is the No.1 Resume/CV Writer in Bangladesh, Asia & Middle East\")\n\n# Manager, BACH Payments and Transactions\n\nBRAC Bank is hiring a Manager to lead the BACH Clearing Unit in its Operations Division.\n\n## Key Responsibilities\n\n- Lead BACH outward and inward clearing for timely cheque processing and settlement\n- Supervise image-based cheque processing, signature checks and returns queues\n- Oversee EFT, RTGS and NPSB clearing in line with Bangladesh Bank rules\n- Drive cross-functional projects and process improvement\n\n## Requirements\n\n- Postgraduate or undergraduate degree from a UGC-approved university\n- 3-6 years of banking experience in BACH operations and BEFTN/RTGS channels\n- Sound knowledge of Bangladesh Bank clearing regulations, EFT/RTGS/NPSB and AML/CFT\n\n## About BRAC Bank\n\nBRAC Bank PLC is one of Bangladesh’s leading private commercial banks and the only Bangladeshi bank on Forbes’ list of the world’s top performing banks.\n\n## How to Apply\n\nInterested candidates can apply through the Apply online through the bdjobs Hot Jobs circular using the **Apply Now** button. The application deadline is **25 November 2026**. Before you apply, make sure your CV is ATS friendly and tailored to this role.\n\n- Use a clean single column CV with standard headings that an applicant tracking system can read\n- Mirror the wording of the circular where it is true for you\n- Show results with numbers, and tailor one version of your CV to this role\n\n## Job Summary\n\n- PositionManager, BACH Payments and Transactions\n- CompanyBRAC Bank PLC\n- Job LocationDhaka\n- DivisionOperations\n- Employment TypeFull-time\n- Experience3-6 years in BACH operations and payment channels (BEFTN/RTGS)\n- EducationPostgraduate or undergraduate degree\n- Deadline25 November 2026\n\n## Source\n\n**Source:** [hotjobs1.bdjobs.com](https://hotjobs1.bdjobs.com/brac-bank-plc/bracbank955a.html) (where we found this vacancy)**Official link:** [bdjobs.com](https://bdjobs.com/h/apply-online/1559090), Apply online through the bdjobs Hot Jobs circular  \nDetails may change; the official circular is final.\n\nReady? Read the full circular and apply through the official link.\n\n[Apply Now](https://bdrecruit.net/job/manager-bach-payments-and-transact",
+   "found_on": "2026-11-25",
+   "ai": true
+  },
+  {
+   "id": "514a2076fba6",
+   "category": "Private",
+   "title": "Product Officer / Product Executive / Deputy Product Manager",
+   "organization": "ProPharma Bangladesh Ltd.",
+   "location": "Dhaka, Bangladesh",
+   "work_type": "On-site",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://bd.linkedin.com/jobs/view/product-officer-product-executive-deputy-product-manager-at-propharma-bangladesh-ltd-4492869461",
+   "apply_url": null,
+   "how_to_apply": "Apply via the LinkedIn job posting.",
+   "summary": "This is a mid-senior level product role based in Dhaka at ProPharma Bangladesh Ltd. The position encompasses product officer, executive, and deputy product manager responsibilities.",
+   "requirements": [
+    "Mid-senior level experience"
+   ],
+   "documents": [],
+   "fit": 3,
+   "fit_reason": "Matches the location and seniority level, but is in the pharmaceuticals/retail medicine sector rather than tech.",
+   "source": "bd.linkedin.com",
+   "jd_text": "### Product Officer / Product Executive / Deputy Product Manager\n\n#### ProPharma Bangladesh Ltd. Dhaka, Dhaka, Bangladesh দেখে নিন এই পদের জন্য কাকে ProPharma Bangladesh Ltd. নিয়োগ দেওয়া হয়েছে\n\nদেখে নিন এই পদের জন্য কাকে ProPharma Bangladesh Ltd. নিয়োগ দেওয়া হয়েছে\n\n- ### জ্যেষ্ঠতার স্তর\n  \n  মিড-সিনিয়র লেভেল\n- ### কর্মসংস্থানের ধরন\n  \n  ফুল-টাইম\n- ### শিল্পগুলি\n  \n  খুচরা ওষুধের দোকান\n\nরেফারেলগুলি আপনার সাক্ষাত্কারের ProPharma Bangladesh Ltd. সম্ভাবনা 2x বাড়িয়ে তোলে\n\nদেখুন আপনি কাকে চেনেন\n\nনতুন Product Officer জব সম্পর্কে নোটিফিকেশন পান **Dhaka, Dhaka, Bangladesh**।\n\n## অনুরূপ জব\n\n## মানুষও দেখেছে\n\n- Expression of Interest: Territory Officer\n  \n  ### Expression of Interest: Territory Officer\n- Senior Executive / Assistant Manager, Business Development\n  \n  ### Senior Executive / Assistant Manager, Business Development\n- Justice System Program Manager\n  \n  ### Justice System Program Manager\n- Vice President, Technology\n  \n  ### Vice President, Technology\n- Senior Executive / Assistant Manager - Business Assurance\n  \n  ### Senior Executive / Assistant Manager - Business Assurance\n- Manager/ Deputy Manager- Product Management Department\n  \n  ### Manager/ Deputy Manager- Product Management Department\n- Product Manager - Home Appliance\n  \n  ### Product Manager - Home Appliance\n- Executive / Senior Executive - Product Management (EERNA)\n  \n  ### Executive / Senior Executive - Product Management (EERNA)\n- Business Strategy & Product Development Manager\n  \n  ### Business Strategy & Product Development Manager\n- Officer / Executive – Marketing, Product Development & Administration\n  \n  ### Officer / Executive – Marketing, Product Development & Administration",
+   "found_on": "2026-11-25",
+   "ai": true
+  },
+  {
+   "id": "4d1202d5d39e",
+   "category": "Remote",
+   "title": "Digital Product Manager II",
+   "organization": "CareSource",
+   "location": "Remote",
+   "work_type": "Remote",
+   "posted": "2026-11-24",
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "Five (5) years of professional experience in digital projects required",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://careers.caresource.com/job/united-states/digital-product-manager-ii/51136/103737850880",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the CareSource careers portal.",
+   "summary": "The Digital Product Manager II independently leads digital products from planning to execution, optimizing experiences and driving engagement. The role involves managing roadmaps, defining backlogs, collaborating with Agile teams, and ensuring regulatory compliance.",
+   "requirements": [
+    "Bachelor's degree in Marketing, Computer Science, IT, or related field preferred",
+    "5+ years of professional experience in digital projects",
+    "Experience translating business requirements into user experience applications",
+    "Project planning and management experience",
+    "Familiarity with Agile scrum ceremonies and tools like ADO",
+    "Knowledge of design thinking principles"
+   ],
+   "documents": [],
+   "fit": 3,
+   "fit_reason": "Matches the candidate's seniority and product management background, though it is remote to the United States rather than explicitly confirming residency in Bangladesh.",
+   "source": "careers.caresource.com",
+   "jd_text": "# Digital Product Manager II\n\n### Remote - United States\n\nJob ID\n\nR13743\n\nCategory\n\nHealth Plan Sales & Marketing\n\nDate posted\n\n11/24/2026\n\n**Job Summary:**\n\nThe Digital Product Manager II is responsible for independently leading digital product(s) from the planning phase through deliverables coordination, execution, communication, and results tracking.\n\n**Essential Functions:**\n\n- Manage growth and optimization of digital products aimed at driving awareness, engagement, adoption and product maturity based on product goals.\n- Develop and maintain product roadmaps, and develop/maintain a backlog for digital initiatives aligning that reflect organizational goals, market trends and product strategy.\n- Identify and pursue digital-first opportunities to enhance self-service and customer experiences.\n- Facilitate Journey Mapping exercises to understand the customer experience and identify gaps and opportunities.\n- Stay on top of emerging capabilities, competitive analysis, and market trends to drive product definition, innovation, and development.\n- Partner with stakeholders to understand their goals, and translate that to work which aligns with business goals.\n- Communicate effectively about project successes, challenges, timelines, and resource needs to ensure transparency and alignment.\n- Manage competing priorities within the digital product portfolio while coordinating daily activities with external agencies and IT partners.\n- Conduct Agile meetings and represent the digital team in discussions with IT vendors, ensuring alignment with product goals.\n- Prioritize, assign and balance work within Agile ADO boards with Scrum, SA and Tech leads acting as Product Owner of digital asset.\n- Utilize Lean Management and Design Thinking principles to navigate ambiguity and drive innovative solutions.\n- Evaluate and validate the business proposition of digital initiatives, ensuring compliance with regulatory standards and enhancing customer experiences.\n- Perform any other job related duties as requested.\n\n**Education and Experience:**\n\n- Bachelor's degree in Marketing, Computer Science, Human Factors, IT, Communications or related field preferred\n- Five (5) years of professional experience in digital projects required\n- Experience translating business requirements into user experience applications in support of technical specifications required\n- Project planning/project management experience is required; experience leading teams and large scale projects preferred\n- Digital product owner experience preferred\n- HMO, Managed Care, or general Healthcare industry experience preferred\n- Experience in Agile scrum ceremonies-story writing, sprint planning, daily standups and retrospectives preferred\n\n**Competencies, Knowledge and Skills:**\n\n- Familiar with desktop and mobile web, android and iOS apps, design, digital quality assurance, digital strategy, user research, prototype and analytic development\n- Utilizes design thinking principles and methods\n- Knowledge o",
+   "found_on": "2026-11-25",
+   "ai": true
+  },
+  {
+   "id": "e529d9c1634f",
+   "category": "Remote",
+   "title": "Product Manager - Realtime",
+   "organization": "Supabase",
+   "location": "Remote",
+   "work_type": "Remote",
+   "posted": "2026-11-25",
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "5+ years of Product Management experience on developer tools",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://jobicy.com/jobs/156943-product-manager-realtime",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the Jobicy job posting link.",
+   "summary": "You will own the surface area developers use to build live, collaborative, and event-driven apps on Supabase. This includes managing roadmaps, defining metrics, and collaborating with engineering and design.",
+   "requirements": [
+    "5+ years of Product Management experience on developer tools",
+    "Experience owning an app development platform, feature, or framework where real-time was core",
+    "Comfortable with Postgres and familiar with logical replication",
+    "Ability to query and analyze product data independently",
+    "Strong asynchronous communication skills"
+   ],
+   "documents": [],
+   "fit": 3,
+   "fit_reason": "Matches the remote product manager requirement with sufficient PM experience, although focused on developer tools rather than travel-tech.",
+   "source": "Jobicy",
+   "jd_text": "Job title: Product Manager - Realtime\nCompany: Supabase\nWho can apply: Anywhere\nSalary: not stated\nPosted: 2026-11-25\n\nAbout Supabase\nSupabase is the Postgres development platform, built by developers for developers. We provide a complete backend solution including Database, Auth, Storage, Edge Functions, Realtime, and Vector Search. All services are deeply integrated and designed for growth.\nAbout the Role\nWe're hiring a Product Manager for Supabase Realtime. You'll own the surface area developers use to build live, collaborative and event-driven apps on Supabase: Broadcast, Presence, Postgres Changes, and the capabilities we build next.\nYou'll work closely with the Realtime Engineering team and with partners across Product Management, Design and GTM.\nThis role is ideal for someone who's excited about building tools for millions of developers and who has a passion for the types of user experiences unlocked by simple, scalable real-time channels. You should have a nuanced understanding of full-stack application development, including existing and emerging real-time and sync patterns.\nWhat You’ll Be Responsible For\nYou'll collaborate with customers of all sizes and expertise levels: from an indie developer adding live updates to a side project, to startups building collaborative SaaS, to enterprise teams streaming live data to dashboards.\nYou'll own the problem statements and solution rationale behind the Realtime roadmap. This means working with Engineering and Design to shape how Supabase crafts the developer experience for the problems you’ve prioritized solving.\nYou'll shape how Realtime evolves to enable future application experiences, including its role in AI apps and alongside other Supabase products.\nYou'll own Realtime packaging and pricing, working with Pricing, Finance and Billing.\nYou'll use data to understand how Supabase developers are using Realtime features: where they succeed, where they get stuck, and what to tackle first.\nYou'll keep Engineering, Design and GTM aligned. You'll own the plan of record for what's coming, why, and in what order.\nYou Might Be a Good Fit If You\nMust have\n5+ years of Product Management experience on developer tools, or are an ex-founder with equivalent depth. You're comfortable commenting on an architecture doc, following a design discussion, and advocating for the user when trade-offs are required.\nHave owned an app development platform, feature or framework where real-time was core to the developer experience.\nGet your own answers from data. You know what you care about in terms of product instrumentation and are comfortable querying and cleaning your own findings.\nAre comfortable with Postgres and familiar with logical replication.\nWork async by default. Supabase is fully remote. You make decisions in writing and move work forward without meetings.\nStrong signal\nYou have an existing audience among developers, through social media, open source or developer advocacy.\nWorked on a sync engine, local-fir",
+   "found_on": "2026-11-25",
+   "ai": true
+  },
   {
    "id": "c16c2856881b",
    "category": "Remote",
