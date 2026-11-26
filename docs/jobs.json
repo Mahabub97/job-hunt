@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-11-25T14:44+06:00",
+ "updated_at": "2026-11-26T14:28+06:00",
  "last_run": {
-  "at": "2026-11-25T14:44+06:00",
-  "new": 5,
+  "at": "2026-11-26T14:28+06:00",
+  "new": 2,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
@@ -14,19 +14,19 @@
    },
    {
     "source": "Web search",
-    "status": "29 searches, 168 results"
+    "status": "29 searches, 169 results"
    },
    {
     "source": "Remotive",
-    "status": "15 listings, 0 match your titles and accept Bangladesh"
+    "status": "16 listings, 0 match your titles and accept Bangladesh"
    },
    {
     "source": "Jobicy",
-    "status": "50 listings, 2 match your titles and accept Bangladesh"
+    "status": "50 listings, 4 match your titles and accept Bangladesh"
    },
    {
     "source": "AI",
-    "status": "Checked 67 of 67 results with 16 AI calls (gemini-3.5-flash-lite)"
+    "status": "Checked 73 of 73 results with 14 AI calls (gemini-3.5-flash-lite)"
    },
    {
     "source": "Alerts",
@@ -35,6 +35,78 @@
   ]
  },
  "jobs": [
+  {
+   "id": "b37be21c2743",
+   "category": "Remote",
+   "title": "Associate Product Owner, Internal AI",
+   "organization": "Optimizely",
+   "location": "Remote",
+   "work_type": "Hybrid",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://jobs.smartrecruiters.com/Optimizely/744000160831670-associate-product-owner-internal-ai",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the SmartRecruiters portal.",
+   "summary": "The Associate Product Owner for Internal AI helps departments succeed with AI by shaping strategy, delivering solutions, and building shared capabilities. The role involves working closely with the AI Engineering team and Shared Services to take ideas from discovery to delivery.",
+   "requirements": [
+    "Product ownership fundamentals",
+    "Ability to build relationships and trust with Business Owners",
+    "Experience owning and prioritising product backlogs",
+    "Experience writing clear PRDs and translating them into epics and stories in Jira",
+    "Knowledge of AI tools, models, and best practices"
+   ],
+   "documents": [],
+   "fit": 2,
+   "fit_reason": "This is an Associate Product Owner role, which is below the candidate's requirement for Product Manager or Senior Product Manager roles.",
+   "source": "jobs.smartrecruiters.com",
+   "jd_text": "# Associate Product Owner, Internal AI\n\n- Full-time\n\n## Company Description\n\nWe're not here to add to the noise. We're here to cut through it- with AI that actually works for marketers.\n\nFrom AI-powered content creation to world-class CMS and the industry's most trusted experimentation platform, Optimizely is the tool modern marketers actually want to use. AI-Ready. Set. Go.\n\n10,000+ brands including H&M, PayPal, and Zoom already get it. So do Gartner, Forrester, and IDC, who consistently recognize us as leaders in MarTech.\n\nBut here's the thing about building great products: it takes great people. Our 1,600+ Optimizers across 12 global offices are curious, collaborative, and refreshingly human. We don't do corporate speak. We do real conversations, big ideas, and genuinely care for the work we make together.\n\nIf you want to be part of a team that's shaping the future of marketing technology — and actually enjoys doing it — you're in the right place.\n\nFind us on Instagram: @optimizely\n\n## Job Description\n\nIntroduction\n\nThe Internal AI Product Team helps departments across Optimizely succeed with AI by shaping strategy, delivering solutions, and building shared capabilities that are safe, scalable, and impactful. As the team has grown, so has the volume of AI work moving through it, across discovery, delivery, and adoption support for every department it partners with. This individual will work closely with the AI Engineering team and Shared Services (Security, Legal, Data, and Compliance) to take ideas from discovery through to delivery and adoption.\n\n**Working Hours:** Monday to Friday, 2:00 PM – 10:00 PM Dhaka time \\[Hybrid and flexible] \n\nJob Responsibilities\n\n**Product ownership fundamentals**\n\n- Develop relationships and build trust with Business Owners.\n- Own and prioritise the product backlog for assigned departments, balancing business value, risk, and delivery capacity.\n- Lead discovery, full or lite, to confirm requirements, success metrics, and technical feasibility before work is approved.\n- Collaborate with the Engineering Team and Shared Services to identify efficient solutions.\n- Write clear PRDs and translate them into well-structured epics and stories in Jira.\n- Run and contribute to daily stand-ups, weekly prioritisation, and monthly planning meetings.\n- Oversee delivery and testing, sign off on demos, and manage handover to business-as-usual.\n- Track value delivered against the team's efficiency, effectiveness, revenue, and risk measures.\n\n**AI-specific responsibilities**\n\n- Keep AI skills current: Stay up to date on AI tools, models, and best practices so guidance to departments reflects what's actually possible today.\n- Learn and use Opal: Build working knowledge of Opal to support teams building agents and to identify where it fits a use case.\n- Build: Build solutions and agents to solve problems. Build lightweight, working prototypes during discovery to test ideas and validate requirements before committing engineering time",
+   "found_on": "2026-11-26",
+   "ai": true
+  },
+  {
+   "id": "073c1b92b0f9",
+   "category": "Private",
+   "title": "Business Development Executive",
+   "organization": "PeopleNTech Limited",
+   "location": "Bangladesh",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://skill.jobs/jobs/business-development-executive-peoplentech-limited-sjVvDNS4",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the Skill Jobs platform.",
+   "summary": "The Business Development Executive will identify new business opportunities, generate leads, build client relationships, and drive business growth. The role requires strong communication, negotiation, and presentation skills.",
+   "requirements": [
+    "Strong communication skills",
+    "Strong negotiation skills",
+    "Strong presentation skills",
+    "Ability to identify new business opportunities",
+    "Lead generation capability"
+   ],
+   "documents": [],
+   "fit": 1,
+   "fit_reason": "This is a Business Development Executive role, which does not match product management or the candidate's target job titles.",
+   "source": "skill.jobs",
+   "jd_text": "We are looking for a proactive and result-oriented Business Development Executive to identify new business opportunities, generate leads, build client relationships, and drive business growth. The ideal candidate should have strong communication, negotiation, and presentation skills.",
+   "found_on": "2026-11-26",
+   "ai": true
+  },
   {
    "id": "1c407840c2bf",
    "category": "Remote",
@@ -67,42 +139,6 @@
    "fit_reason": "The candidate has strong senior product management and growth experience that perfectly aligns with this remote Senior Product Manager role which accepts applicants from APAC, including Bangladesh.",
    "source": "Jobicy",
    "jd_text": "Job title: Senior Product Manager, User Acquisition\nCompany: RevenueCat\nWho can apply: APAC,  EMEA,  LATAM,  Canada,  USA\nSalary: not stated\nPosted: 2026-11-25\n\nRevenueCat gives app businesses the infrastructure and tools to build, run, and improve their monetization. Since graduating from YC's S18 batch, we've grown into the default monetization platform for mobile. \nWe're in 50%+ of newly shipped subscription apps, we process $16B+ in annual purchase volume, and we help everyone from a solo developer to the OpenAI mobile team understand and grow their revenue.\nWe're a remote-first team of 150+ people across 25+ countries, guided by values we actually practice: Customer Obsession, Always Be Shipping, Own It, and Balance. \nThis isn't the right fit for everyone. The systems you’ll build here manage billions of dollars and touch hundreds of millions of end users, and we don’t take that lightly. You'll be expected to work hard and hold a high bar for what you ship, alongside some of the sharpest, most driven people you've worked with. If that sounds energizing rather than exhausting, keep reading.\nThe Role\nAs Senior Product Manager, User Acquisition, you'll explore an important extension of how RevenueCat helps developers grow: helping them not just monetize the users they have, but acquire more of the right users in the first place.\nRevenueCat already has several footholds in user acquisition, including our Apple Ads integration and integrations across the attribution and MMP ecosystem. But we're still early in defining what a broader RevenueCat user acquisition product should become. You'll be the first dedicated product hire focused on this space, reporting directly to our product lead for Ads, with significant latitude to shape both the strategy and the products we build.\nThis is a genuine zero-to-one role. You won't inherit a predetermined roadmap. Your job will be to deeply understand how app developers acquire users today, identify where RevenueCat has an opportunity to solve problems meaningfully better, and turn those insights into products we can test, ship, and scale.\nYou'll bring real expertise in mobile performance marketing and user acquisition to that process. The opportunity could eventually span attribution and measurement, products built on top of existing acquisition channels, new ways to optimize spend using downstream monetization data, partnerships, advertising infrastructure, or things we haven't considered yet. We have hypotheses, but we're hiring you in part because we want your perspective on which ones are worth pursuing.\nRevenueCat has some unusual advantages to build from: relationships with a large ecosystem of app developers, deep visibility into subscription and monetization outcomes, infrastructure already embedded in apps, and a growing advertising business. The challenge is figuring out how those assets can translate into something uniquely valuable for developers trying to grow.\nAbout you:\nYou have 5+ years of exp",
-   "found_on": "2026-11-25",
-   "ai": true
-  },
-  {
-   "id": "05b5cad8c91a",
-   "category": "Bank",
-   "title": "Manager, BACH Payments and Transactions",
-   "organization": "BRAC Bank PLC",
-   "location": "Dhaka",
-   "work_type": "Full-time",
-   "posted": null,
-   "application_start": null,
-   "deadline": "2026-11-25",
-   "vacancies": null,
-   "salary": null,
-   "experience": "3-6 years of banking experience in BACH operations and BEFTN/RTGS channels",
-   "age_limit": null,
-   "max_age_years": null,
-   "age_as_of": null,
-   "fee": null,
-   "url": "https://thecvguy.net/bank-jobs/brac-bank-manager-bach-payments-and-transactions-2026",
-   "apply_url": "https://bdjobs.com/h/apply-online/1559090",
-   "how_to_apply": "Apply online through the bdjobs Hot Jobs circular using the Apply Now button.",
-   "summary": "You will lead the BACH Clearing Unit in the Operations Division, handling outward and inward clearing and payment channels. You will also drive cross-functional projects and process improvements.",
-   "requirements": [
-    "Postgraduate or undergraduate degree from a UGC-approved university",
-    "3-6 years of banking experience in BACH operations and BEFTN/RTGS channels",
-    "Sound knowledge of Bangladesh Bank clearing regulations, EFT/RTGS/NPSB and AML/CFT"
-   ],
-   "documents": [
-    "ATS friendly CV tailored to this role"
-   ],
-   "fit": 4,
-   "fit_reason": "Matches the bank manager-level role criteria in Bangladesh with a focus on payments and transactions, suitable for a candidate with strong MBA and finance background.",
-   "source": "thecvguy.net",
-   "jd_text": "![BRAC Bank is Hiring Senior Manager Credit Risk Enterprise Risk Management](https://thecvguy.net/wp-content/uploads/2026/11/BRAC-Bank-is-Hiring-Senior-Manager-Credit-Risk-Enterprise-Risk-Management_2026_The-CV-Guy-Top-Rated-CV-Writing-Company.jpg \"BRAC Bank Job Circular 2026 | Manager, BACH Payments and Transactions 3 The CV Guy is the No.1 Resume/CV Writer in Bangladesh, Asia & Middle East\")\n\n## BRAC Bank Job Circular 2026 | Manager, BACH Payments and Transactions\n\n![BRAC Bank is Hiring Manager BACH Payments and Transactions](https://thecvguy.net/wp-content/uploads/2026/11/BRAC-Bank-is-Hiring-Manager-BACH-Payments-and-Transactions_2026_The-CV-Guy-Top-Rated-CV-Writing-Company-1024x1024.jpg \"BRAC Bank Job Circular 2026 | Manager, BACH Payments and Transactions 1 The CV Guy is the No.1 Resume/CV Writer in Bangladesh, Asia & Middle East\")\n\n# Manager, BACH Payments and Transactions\n\nBRAC Bank is hiring a Manager to lead the BACH Clearing Unit in its Operations Division.\n\n## Key Responsibilities\n\n- Lead BACH outward and inward clearing for timely cheque processing and settlement\n- Supervise image-based cheque processing, signature checks and returns queues\n- Oversee EFT, RTGS and NPSB clearing in line with Bangladesh Bank rules\n- Drive cross-functional projects and process improvement\n\n## Requirements\n\n- Postgraduate or undergraduate degree from a UGC-approved university\n- 3-6 years of banking experience in BACH operations and BEFTN/RTGS channels\n- Sound knowledge of Bangladesh Bank clearing regulations, EFT/RTGS/NPSB and AML/CFT\n\n## About BRAC Bank\n\nBRAC Bank PLC is one of Bangladesh’s leading private commercial banks and the only Bangladeshi bank on Forbes’ list of the world’s top performing banks.\n\n## How to Apply\n\nInterested candidates can apply through the Apply online through the bdjobs Hot Jobs circular using the **Apply Now** button. The application deadline is **25 November 2026**. Before you apply, make sure your CV is ATS friendly and tailored to this role.\n\n- Use a clean single column CV with standard headings that an applicant tracking system can read\n- Mirror the wording of the circular where it is true for you\n- Show results with numbers, and tailor one version of your CV to this role\n\n## Job Summary\n\n- PositionManager, BACH Payments and Transactions\n- CompanyBRAC Bank PLC\n- Job LocationDhaka\n- DivisionOperations\n- Employment TypeFull-time\n- Experience3-6 years in BACH operations and payment channels (BEFTN/RTGS)\n- EducationPostgraduate or undergraduate degree\n- Deadline25 November 2026\n\n## Source\n\n**Source:** [hotjobs1.bdjobs.com](https://hotjobs1.bdjobs.com/brac-bank-plc/bracbank955a.html) (where we found this vacancy)**Official link:** [bdjobs.com](https://bdjobs.com/h/apply-online/1559090), Apply online through the bdjobs Hot Jobs circular  \nDetails may change; the official circular is final.\n\nReady? Read the full circular and apply through the official link.\n\n[Apply Now](https://bdrecruit.net/job/manager-bach-payments-and-transact",
    "found_on": "2026-11-25",
    "ai": true
   },
