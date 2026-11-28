@@ -1,32 +1,178 @@
 {
- "updated_at": "2026-11-26T14:28+06:00",
+ "updated_at": "2026-11-28T13:56+06:00",
  "last_run": {
-  "at": "2026-11-27T14:42+06:00",
-  "new": 0,
+  "at": "2026-11-28T13:56+06:00",
+  "new": 4,
   "sources": [
    {
     "source": "Bangladesh Bank e-recruitment",
-    "status": "Couldn’t open the page (URLError)"
+    "status": "Read the page (0 links)"
+   },
+   {
+    "source": "Bangladesh Bank e-recruitment",
+    "status": "0 new matching notices"
    },
    {
     "source": "Web search",
-    "status": "29 searches, 169 results"
+    "status": "29 searches, 168 results"
    },
    {
     "source": "Remotive",
-    "status": "16 listings, 0 match your titles and accept Bangladesh"
+    "status": "17 listings, 0 match your titles and accept Bangladesh"
    },
    {
     "source": "Jobicy",
-    "status": "50 listings, 4 match your titles and accept Bangladesh"
+    "status": "50 listings, 0 match your titles and accept Bangladesh"
    },
    {
     "source": "AI",
-    "status": "Checked 67 of 67 results with 12 AI calls (gemini-3.5-flash-lite)"
+    "status": "Checked 77 of 77 results with 14 AI calls (gemini-3.5-flash-lite)"
+   },
+   {
+    "source": "Alerts",
+    "status": "Sent the Telegram message"
    }
   ]
  },
  "jobs": [
+  {
+   "id": "1fa8a12904bd",
+   "category": "Private",
+   "title": "Senior Product Manager",
+   "organization": "Arogga Ltd.",
+   "location": "Dhaka",
+   "work_type": null,
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.atb-jobs.com/ar/jobs/senior-product-manager-at-arogga-ltd-dhaka-90197",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the provided job portal link.",
+   "summary": "Arogga is seeking a proactive, execution-oriented Senior Product Manager in Dhaka to identify business and operational problems and develop solutions. The role involves managing product features and collaborating with teams to drive growth and operational efficiency.",
+   "requirements": [
+    "Experience in product management",
+    "Strong problem-solving skills",
+    "Execution-oriented mindset"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "It is a Senior Product Manager role in Dhaka, matching the candidate's exact seniority and domain expertise.",
+   "source": "atb-jobs.com",
+   "jd_text": "Position Overview Arogga is looking for a highly proactive, execution-oriented Senior Product Manager who can identify business and operational problems, develo",
+   "found_on": "2026-11-28",
+   "ai": true
+  },
+  {
+   "id": "73cbb758eb39",
+   "category": "Private",
+   "title": "Product Manager",
+   "organization": "brritto",
+   "location": "Gulshan 2, Dhaka",
+   "work_type": "On-site",
+   "posted": null,
+   "application_start": null,
+   "deadline": null,
+   "vacancies": null,
+   "salary": null,
+   "experience": "Minimum 2–4 years",
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.facebook.com/brrittoFB/posts/%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%AF-%F0%9D%97%A7%F0%9D%97%B6%F0%9D%98%81%F0%9D%97%B9%F0%9D%97%B2-product-manager-%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%AF-%F0%9D%97%A7%F0%9D%98%86%F0%9D%97%BD%F0%9D%97%B2-full-time-on-site-%F0%9D%97%9F%F0%9D%97%BC%F0%9D%97%B0%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB-gulshan-2-dhaka%F0%9D%90%84%F0%9D%90%B1%F0%9D%90%A9/122229090524349589",
+   "apply_url": null,
+   "how_to_apply": "Visit the Facebook post to view application details.",
+   "summary": "brritto is hiring a full-time, on-site Product Manager to be based in Gulshan 2, Dhaka. The role requires handling product lifecycle management in a fast-paced environment.",
+   "requirements": [
+    "Minimum 2–4 years of experience",
+    "Full-time availability for on-site work in Dhaka"
+   ],
+   "documents": [],
+   "fit": 5,
+   "fit_reason": "This is a direct local Product Manager role in Dhaka matching the candidate's core private sector experience and location preferences.",
+   "source": "facebook.com",
+   "jd_text": "Job Title: Product Manager Job Type: Full-Time (On-site) Location: Gulshan 2, Dhaka Experience: Minimum 2–4 years Salary:",
+   "found_on": "2026-11-28",
+   "ai": true
+  },
+  {
+   "id": "667653e30701",
+   "category": "Bank",
+   "title": "Assistant Director",
+   "organization": "Bangladesh Bank",
+   "location": "Anywhere in Bangladesh",
+   "work_type": "On-site",
+   "posted": "2026-11-26",
+   "application_start": "2026-11-30",
+   "deadline": "2026-12-27",
+   "vacancies": "150",
+   "salary": "BDT 44,000 - 1,05,900/month (Grade 9)",
+   "experience": null,
+   "age_limit": "21 to 32 Years (as of 01/11/2026)",
+   "max_age_years": 32.0,
+   "age_as_of": "2026-11-01",
+   "fee": "BDT 200 (via Bangla QR)",
+   "url": "https://students.bd/en/job/bangladesh-bank-job-circular-2026-assistant-director-apply-online",
+   "apply_url": "https://erecruitment.bb.org.bd/",
+   "how_to_apply": "Apply online through the official Bangladesh Bank e-recruitment portal before the deadline.",
+   "summary": "Bangladesh Bank is recruiting Assistant Directors under Grade 9 of the National Pay Scale. Eligible candidates with a master's degree can apply online.",
+   "requirements": [
+    "4-year Honours degree or Bachelor's with Master's degree in any subject",
+    "At least two First Divisions/Classes or equivalent GPA/CGPA in SSC and higher-level exams",
+    "No Third Division/Class at any academic stage",
+    "Age between 21 to 32 years as of 01/11/2026",
+    "Permanent citizen of Bangladesh"
+   ],
+   "documents": [
+    "Equivalence Certificate for O' Level, A' Level, or foreign degrees if applicable"
+   ],
+   "fit": 5,
+   "fit_reason": "The candidate holds an MBA in Finance & Banking and matches all educational, age, and grade criteria for this central bank Assistant Director position.",
+   "source": "students.bd",
+   "jd_text": "# Bangladesh Bank Job Circular 2026 - Assistant Director Apply Online\n\nBangladesh Bank [Website](https://www.bb.org.bd)\n\n150\n\nFull-time\n\nBDT 44,000 - 1,05,900/month (Grade 9)\n\nAnywhere in Bangladesh\n\n21 to 32 Years (as of 01/11/2026)\n\n27 December 2026 (30 days left)\n\nBDT 200 (via Bangla QR)\n\n![Bangladesh Bank Job Circular 2026 - Assistant Director Apply Online - Bangladesh Bank Job Circular 2026](https://students.bd/assets/bangladesh-bank-job-circular-2026-assistant-director-apply-online-1795801114225.avif \"Bangladesh Bank Job Circular 2026 - Assistant Director Apply Online | Bangladesh Bank\")\n\nInformation verified from official circular & career portal | Last update: 27 November 2026\n\n## Bangladesh Bank Job Circular 2026 at a Glance\n\n### Why Should You Apply for This Job?\n\n- Prestigious career opportunities at Bangladesh Bank with excellent job stability and growth prospects.\n- Attractive salary and allowances in accordance with the National Pay Scale or competitive institutional structure.\n- Extensive recruitment scope across diverse qualifications for eligible candidates nationwide.\n\n| Organization | Bangladesh Bank |\n|---|---|\n| Sector / Category | Bank |\n| Job Location | Anywhere in Bangladesh |\n| Post Categories | 01 Category |\n| Total Vacancies | 150 Posts (Subject to change) |\n| Job Type | Bank Job |\n| Age Limit | 21 to 32 Years (as of 01 November 2026) |\n| Educational Requirements | 4-Year Honours or Bachelor's with Master's degree in any subject |\n| Salary & Benefits | BDT 44,000 - 1,05,900 (Grade 9, National Pay Scale 2026) |\n| Application Fee | BDT 200 (Non-refundable, via Bangla QR) |\n| Source | Official Website (erecruitment.bb.org.bd) |\n| Reference / Memo No | 90/2026 |\n| Application Deadline | 27 December 2026 |\n| Application Method | Apply Online |\n\n## Full Description & Responsibilities\n\n**Bangladesh Bank** (Human Resources Department-1, Recruitment and Outsourcing Wing, Head Office, Motijheel, Dhaka) has published a recruitment circular (Circular No: 90/2026, Date: 26 November 2026) inviting applications from permanent citizens of Bangladesh for the post of **Assistant Director**.\n\n### Positions (Total 150 Vacancies)\n\n#### 1. Assistant Director Grade 9\n\n**Department:** Bangladesh Bank **Salary:** BDT 44,000 - 1,05,900 (National Pay Scale 2026) & other admissible benefits **Vacancies:** 150 (subject to increase or decrease)\n\n- **Educational Qualification:** 4-year Honours degree from a recognized university after passing HSC/equivalent from a recognized board, OR a Bachelor's degree with a Master's degree in any subject from a recognized university (combined duration of Bachelor's and Master's must be at least 4 years).\n- **Academic Results:** Must have at least two First Divisions/Classes or equivalent GPA/CGPA in SSC and higher-level examinations. Third Division/Class or equivalent GPA/CGPA at any stage of academic life is not acceptable.\n- **Equivalence Certificate:** Candidates with O' Level, A' Level, or foreign university ",
+   "found_on": "2026-11-28",
+   "ai": true
+  },
+  {
+   "id": "d61ba26c6cb2",
+   "category": "Government",
+   "title": "Assistant Director",
+   "organization": "National Security Intelligence (NSI)",
+   "location": "Bangladesh",
+   "work_type": "On-site",
+   "posted": null,
+   "application_start": null,
+   "deadline": "2026-12-23",
+   "vacancies": "158",
+   "salary": "44,000-1,05,000",
+   "experience": null,
+   "age_limit": null,
+   "max_age_years": null,
+   "age_as_of": null,
+   "fee": null,
+   "url": "https://www.jugantor.com/job-seek/1191072",
+   "apply_url": null,
+   "how_to_apply": "Apply online through the designated job portal before the deadline.",
+   "summary": "National Security Intelligence is hiring Assistant Directors for grade 9 positions. This government role is suitable for graduates with relevant degrees.",
+   "requirements": [
+    "Grade 9 position",
+    "Assistant Director role"
+   ],
+   "documents": [],
+   "fit": 4,
+   "fit_reason": "This is a 9th-grade government Assistant Director position open to graduates matching the candidate's public-sector job search criteria.",
+   "source": "jugantor.com",
+   "jd_text": "সহকারী পরিচালক. Advertisement. পদসংখ্যা: ১৫৮টি. বেতন গ্রেড: ৯. বেতনস্কেল: ৪৪,০০০-১,০৫",
+   "found_on": "2026-11-28",
+   "ai": true
+  },
   {
    "id": "b37be21c2743",
    "category": "Remote",
